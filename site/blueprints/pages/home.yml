@@ -1,0 +1,286 @@
+title: Forside
+
+options:
+  changeTemplate: false
+  changeSlug: false
+  delete: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      content:
+        type: fields
+        fields:
+          settings_headline:
+            label: Sideinnstillinger
+            type: headline
+          title:
+            label: Tittel
+            type: text
+            required: true
+          hero_headline:
+            label: Hero section
+            type: headline
+          hero_logo:
+            label: Logo i hero
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 4
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          hero_primary_button_text:
+            label: Tekst på hovedknapp
+            type: text
+          hero_secondary_button_text:
+            label: Tekst på sekundær knapp
+            type: text
+          opening_headline:
+            label: Åpningstider section
+            type: headline
+          opening_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          opening_label:
+            label: Liten seksjonslabel
+            type: text
+          opening_title:
+            label: Overskrift
+            type: text
+          opening_intro:
+            label: Intro til åpningstider
+            type: textarea
+            rows: 4
+          opening_notice:
+            label: Sesongmelding / liten tekst
+            type: textarea
+            rows: 3
+          opening_notice_enabled:
+            label: Vis sesongmelding
+            type: toggle
+            text:
+              - "Nei"
+              - "Ja"
+            default: true
+          opening_hours:
+            label: Liste med dager og klokkeslett
+            type: structure
+            fields:
+              day:
+                label: Dag
+                type: text
+              time:
+                label: Tid
+                type: text
+          opening_button_text:
+            label: Tekst på knapp
+            type: text
+          events_headline:
+            label: Arrangementer section
+            type: headline
+          events_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          events_label:
+            label: Liten seksjonslabel
+            type: text
+          events_title:
+            label: Overskrift
+            type: text
+          events_intro:
+            label: Intro til arrangementer
+            type: textarea
+            rows: 4
+          events_button_text:
+            label: Tekst på knapp
+            type: text
+          about_headline:
+            label: Om klubben section
+            type: headline
+          about_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          about_label:
+            label: Liten seksjonslabel
+            type: text
+          about_title:
+            label: Overskrift
+            type: text
+          about_intro:
+            label: Intro til om klubben
+            type: textarea
+            rows: 4
+          about_secondary_text:
+            label: Ekstra avsnitt
+            type: textarea
+            rows: 3
+          about_image:
+            label: Bilde i seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          about_button_text:
+            label: Tekst på knapp
+            type: text
+          support_headline:
+            label: Sponsorer section
+            type: headline
+          support_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          support_label:
+            label: Liten seksjonslabel
+            type: text
+          support_title:
+            label: Overskrift
+            type: text
+          support_intro:
+            label: Intro til prosjekter og støtte
+            type: textarea
+            rows: 4
+          support_secondary_text:
+            label: Ekstra avsnitt
+            type: textarea
+            rows: 3
+          support_image:
+            label: Bilde i seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          support_button_text:
+            label: Tekst på knapp
+            type: text
+          faq_headline:
+            label: FAQ section
+            type: headline
+          faq_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          faq_label:
+            label: Liten seksjonslabel
+            type: text
+          faq_title:
+            label: Overskrift
+            type: text
+          faq_intro:
+            label: Intro
+            type: textarea
+            rows: 3
+          faq_button_text:
+            label: Tekst på knapp
+            type: text
+          faq:
+            label: Vanlige spørsmål på forsiden
+            type: structure
+            fields:
+              sporsmal:
+                label: Spørsmål
+                type: text
+              svar:
+                label: Svar
+                type: textarea
+                rows: 3
+          cta_headline:
+            label: CTA section
+            type: headline
+          cta_label:
+            label: Liten seksjonslabel
+            type: text
+          cta_title:
+            label: CTA-tittel
+            type: text
+          cta_text:
+            label: CTA-tekst
+            type: textarea
+            rows: 3
+          cta_primary_button_text:
+            label: Tekst på hovedknapp
+            type: text
+          cta_secondary_button_text:
+            label: Tekst på sekundær knapp
+            type: text
+          gallery_headline:
+            label: Galleri section
+            type: headline
+          gallery_icon:
+            label: Ikon for seksjonen
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          gallery_label:
+            label: Liten seksjonslabel
+            type: text
+          gallery_title:
+            label: Overskrift
+            type: text
+          gallery_intro:
+            label: Intro til galleri
+            type: textarea
+            rows: 3
+          gallery_featured_image:
+            label: Hovedbilde i galleri
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          gallery_images:
+            label: Galleri-bilder
+            type: files
+            max: 4
+            layout: cards
+            uploads:
+              template: image
+          gallery_button_text:
+            label: Tekst på knapp
+            type: text
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160

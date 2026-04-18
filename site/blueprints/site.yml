@@ -1,0 +1,161 @@
+title: Globale innstillinger
+
+tabs:
+  sider:
+    label: Sider
+    icon: page
+    sections:
+      home:
+        type: pages
+        label: Forside
+        template: home
+        status: all
+        max: 1
+        create: false
+      hovedsider:
+        type: pages
+        label: Hovedsider
+        templates:
+          - default
+          - contact
+          - arrangementer
+          - sponsorer
+        status: all
+        create:
+          - default
+          - contact
+          - arrangementer
+          - sponsorer
+  generell:
+    label: Klubbinfo
+    icon: text
+    sections:
+      fields:
+        type: fields
+        fields:
+          club_name:
+            label: Klubbenavn
+            type: text
+            required: true
+          description:
+            label: Standard meta-beskrivelse
+            type: textarea
+            rows: 2
+          footer_text:
+            label: Footer-tekst
+            type: text
+  profil:
+    label: Profil
+    icon: image
+    sections:
+      branding:
+        type: fields
+        fields:
+          header_logo_mark:
+            label: Header-logo symbol
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          header_logo_wordmark:
+            label: Header-logo tekst
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          hero_logo:
+            label: Logo i hero
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+          footer_logo:
+            label: Footer-logo
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+      navigation:
+        type: fields
+        fields:
+          menu_button_text:
+            label: Tekst på menyknapp
+            type: text
+          nav_events_text:
+            label: "Menytekst: Arrangementer"
+            type: text
+          nav_about_text:
+            label: "Menytekst: Om klubben"
+            type: text
+          nav_contact_text:
+            label: "Menytekst: Kontakt"
+            type: text
+          nav_member_text:
+            label: "Menytekst: Bli medlem"
+            type: text
+  kontakt:
+    label: Kontakt
+    icon: phone
+    sections:
+      fields:
+        type: fields
+        fields:
+          epost:
+            label: E-postadresse
+            type: email
+          telefon:
+            label: Telefonnummer
+            type: tel
+          indoor_location:
+            label: Innendørslokasjon
+            type: text
+          outdoor_location:
+            label: Utendørslokasjon
+            type: text
+          poststed:
+            label: Poststed
+            type: text
+          season_notice:
+            label: Sesongmelding
+            type: textarea
+            rows: 3
+          opening_hours:
+            label: Åpningstider
+            type: structure
+            fields:
+              day:
+                label: Dag
+                type: text
+              time:
+                label: Tid
+                type: text
+  medlemskap:
+    label: Medlemskap
+    icon: users
+    sections:
+      fields:
+        type: fields
+        fields:
+          member_link:
+            label: Innmeldingslenke
+            type: url
+          member_price:
+            label: Medlemspris / info
+            type: text
+  sosialt:
+    label: Sosiale medier
+    icon: url
+    sections:
+      fields:
+        type: fields
+        fields:
+          instagram_url:
+            label: Instagram
+            type: url
+          facebook_url:
+            label: Facebook
+            type: url

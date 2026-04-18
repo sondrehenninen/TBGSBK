@@ -1,0 +1,5 @@
+Uuid: ud5volxzcfyblhio
+
+----
+
+Template: image

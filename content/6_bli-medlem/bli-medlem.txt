@@ -1,0 +1,155 @@
+Title: Bli medlem
+
+----
+
+Meta-description: Bli medlem i Tønsberg Skateboardklubb. Finn ut hvordan innmelding fungerer, hvilke fordeler du får og hvordan du kommer i gang.
+
+----
+
+Hero-title: Bli en del av miljøet i Tønsberg
+
+----
+
+Hero-intro: Medlemskap gir deg en tydelig vei inn i klubben, flere fordeler gjennom Brettforbundet og et miljø du kan vokse i over tid.
+
+----
+
+Hero-primary-button-text: Meld deg inn
+
+----
+
+Hero-secondary-button-text: Kontakt oss
+
+----
+
+Intro-label: Hvorfor bli med
+
+----
+
+Intro-title: Et medlemskap er mer enn bare tilgang
+
+----
+
+Intro-body:
+
+Som medlem i Tønsberg Skateboardklubb blir du en del av et inkluderende fellesskap med tilgang til arrangementer, skateskoler, sessions og aktiviteter gjennom året.
+
+For mange er medlemskap også den enkleste måten å få en trygg start på: du får et tydelig kontaktpunkt, bedre oversikt over hva som skjer og et miljø å komme tilbake til.
+
+----
+
+Benefits-label: Fordeler
+
+----
+
+Benefits-title: Dette får du som medlem
+
+----
+
+Benefits:
+
+- tag: Miljø
+  title: Tilgang til klubbens aktiviteter
+  text: Du får tilgang til arrangementer, skateskoler, sessions og aktiviteter gjennom året, og blir lettere en del av det som skjer i miljøet.
+- tag: Forbund
+  title: Fordeler gjennom Brettforbundet
+  text: Klubben er tilknyttet Brettforbundet og Norges idrettsforbund, noe som gir medlemsfordeler, organisert tilhørighet og flere muligheter videre.
+- tag: Trygghet
+  title: Forsikring og medvirkning
+  text: Utøvere under 13 år er dekket av NIFs sentrale barneidrettsforsikring, og medlemmer får også stemmerett på årsmøte.
+
+----
+
+Steps-label: Slik fungerer det
+
+----
+
+Steps-title: Tre enkle steg for å komme i gang
+
+----
+
+Steps:
+
+- tag: "1"
+  title: Meld deg inn via MinIdrett
+  text: Innmeldingen skjer digitalt via MinIdrett. Der registrerer du deg og fullfører medlemskapet trygt.
+- tag: "2"
+  title: Få bekreftelse og oversikt
+  text: Når innmeldingen er registrert, er du inne. Ta gjerne kontakt med oss om du vil vite hvilke økter eller arrangementer som passer best først.
+- tag: "3"
+  title: Møt opp og bli kjent
+  text: Du trenger ikke å kjenne noen fra før. Vi hjelper deg med å finne en naturlig vei inn i miljøet og hva som er riktig første steg.
+
+----
+
+Practical-label: Praktisk info
+
+----
+
+Practical-title: Greit å vite før du melder deg inn
+
+----
+
+Practical-notes:
+
+- text: Du kan være helt ny og fortsatt passe inn. Klubben er åpen for ulike nivåer.
+- text: Hvis du er usikker på opplegg, utstyr eller nivå, er det helt lov å kontakte oss først.
+- text: Kontingent og detaljer rundt medlemskap håndteres via innmeldingsløsningen og klubbens kontaktpersoner.
+- text: Medlemskap støtter også arbeidet for å bygge et sterkere, helårlig tilbud i Tønsberg.
+
+----
+
+Practical-primary-button-text: Gå til MinIdrett
+
+----
+
+Practical-secondary-button-text: Still spørsmål først
+
+----
+
+Faq-label: Vanlige spørsmål
+
+----
+
+Faq-title: Det folk ofte lurer på først
+
+----
+
+Faq-intro: Her har vi samlet de vanligste spørsmålene om innmelding. Hvis du fortsatt er usikker etterpå, vil vi heller at du tar kontakt enn at du lar være å bli med.
+
+----
+
+Faq:
+
+- sporsmal: Hvordan melder jeg meg inn?
+  svar: Innmelding skjer via MinIdrett. Følg lenken til innmeldingssiden, registrer deg og fullfør medlemskapet der.
+- sporsmal: Hva skjer etter innmelding?
+  svar: Du får bekreftelse på at medlemskapet er registrert. Deretter kan du kontakte oss for å finne riktige økter, tider eller arrangementer å starte med.
+- sporsmal: Kan jeg ta kontakt før jeg bestemmer meg?
+  svar: Ja. Hvis du lurer på nivå, utstyr, alder eller hvordan miljøet er, anbefaler vi at du spør oss først. Det er nettopp derfor kontaktsiden finnes.
+- sporsmal: Må jeg ha erfaring eller eget utstyr?
+  svar: Nei, ikke nødvendigvis. Mange er nysgjerrige før de er erfarne. Ta kontakt, så hjelper vi deg med å finne ut hva som trengs for å komme i gang.
+
+----
+
+Cta-label: Klar til å bli med?
+
+----
+
+Cta-title: Innmelding skjer trygt via MinIdrett
+
+----
+
+Cta-text: Når du er klar, går du videre til innmeldingen. Hvis du vil snakke med noen først, tar du kontakt med klubben direkte.
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Uuid: ioqlxvpccpqdr8cu

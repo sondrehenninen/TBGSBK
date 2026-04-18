@@ -1,0 +1,172 @@
+title: Arrangementer
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+      upcoming:
+        type: fields
+        headline: Kommende arrangementer
+        fields:
+          list_label:
+            label: Label
+            type: text
+          list_title:
+            label: Tittel
+            type: text
+          list_link_text:
+            label: Linktekst
+            type: text
+      expectation:
+        type: fields
+        headline: Hva du kan forvente
+        fields:
+          expectation_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          expectation_label:
+            label: Label
+            type: text
+          expectation_title:
+            label: Tittel
+            type: text
+          expectation_body:
+            label: Tekst
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          expectation_primary_button_text:
+            label: Primærknapp
+            type: text
+          expectation_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+      offers:
+        type: fields
+        headline: Faste tilbud
+        fields:
+          offers_label:
+            label: Label
+            type: text
+          offers_title:
+            label: Tittel
+            type: text
+          offers:
+            label: Tilbudskort
+            type: structure
+            fields:
+              tag:
+                label: Tag
+                type: text
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 3
+              meta:
+                label: Metatekst
+                type: text
+      practical:
+        type: fields
+        headline: Praktisk info
+        fields:
+          practical_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          practical_label:
+            label: Label
+            type: text
+          practical_title:
+            label: Tittel
+            type: text
+          practical_notes:
+            label: Punkter
+            type: structure
+            fields:
+              text:
+                label: Punkt
+                type: text
+          practical_primary_button_text:
+            label: Primærknapp
+            type: text
+          practical_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_label:
+            label: Label
+            type: text
+          cta_title:
+            label: Tittel
+            type: text
+          cta_text:
+            label: Tekst
+            type: textarea
+            rows: 3
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+      arrangementer:
+        label: Arrangementer
+        type: pages
+        templates:
+          - arrangement
+        create: arrangement
+        sortBy: start_date asc
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160

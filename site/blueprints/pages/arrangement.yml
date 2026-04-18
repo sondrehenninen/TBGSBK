@@ -1,0 +1,47 @@
+title: Arrangement
+
+options:
+  changeTemplate: false
+
+fields:
+  title:
+    label: Tittel
+    type: text
+    required: true
+  tag:
+    label: Tag
+    type: text
+    placeholder: "Ukentlig"
+  date_label:
+    label: Datolabel
+    type: text
+    help: Brukes i kortvisning hvis du vil vise tekst som "Tirsdager kl 17:00"
+  start_date:
+    label: Startdato
+    type: date
+    required: true
+  end_date:
+    label: Sluttdato
+    type: date
+  location:
+    label: Sted
+    type: text
+  intro:
+    label: Kort ingress
+    type: textarea
+    rows: 3
+  description:
+    label: Beskrivelse
+    type: textarea
+    rows: 6
+  signup_link:
+    label: Påmeldingslenke
+    type: url
+  price:
+    label: Pris
+    type: text
+  meta_description:
+    label: Meta-beskrivelse (SEO)
+    type: textarea
+    rows: 2
+    maxlength: 160

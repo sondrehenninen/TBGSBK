@@ -1,0 +1,86 @@
+Title: Tønsberg Skateboardklubb
+
+----
+
+Club_name: Tønsberg Skateboardklubb
+
+----
+
+Description: Tønsberg Skateboardklubb er åpen for alle nivåer og aldre. Bli med i skatemiljøet i Tønsberg og finn åpningstider, arrangementer og medlemsinfo på ett sted.
+
+----
+
+Footer_text: Frivillig drevet klubb for skating, fellesskap og mestring i Tønsberg.
+
+----
+
+Menu_button_text: Meny
+
+----
+
+Nav_events_text: Arrangementer
+
+----
+
+Nav_about_text: Om klubben
+
+----
+
+Nav_contact_text: Kontakt oss
+
+----
+
+Nav_member_text: Bli medlem
+
+----
+
+Epost: alexanderlap@live.com
+
+----
+
+Telefon: 45412255
+
+----
+
+Indoor_location: Messehall B, Tønsberg
+
+----
+
+Outdoor_location: Gunnarsbøparken, Tønsberg
+
+----
+
+Poststed: Tønsberg, Vestfold
+
+----
+
+Season_notice: Messehall B er sesongstengt frem til september. Ekstraordinære åpningstider kan forekomme og blir kunngjort på Facebook og Instagram.
+
+----
+
+Opening_hours:
+
+- day: Tirsdag
+  time: 17:00–21:00
+- day: Torsdag
+  time: 17:00–21:00
+- day: Lørdag
+  time: 10:00–16:00
+- day: Sommer
+  time: Gunnarsbøparken er åpen hele sommerhalvåret
+
+----
+
+Member_link: https://www.minidrett.no/medlemskap/1015568
+
+----
+
+Member_price: Medlemskap registreres via MinIdrett. Ta kontakt hvis du lurer på satser eller hvordan innmeldingen fungerer.
+
+----
+
+Instagram_url: https://instagram.com/tbgsbk
+
+----
+
+Facebook_url: https://facebook.com/tbgsbk

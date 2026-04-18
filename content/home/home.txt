@@ -1,0 +1,268 @@
+Title: Tønsberg Skateboardklubb
+
+----
+
+Hero-logo: - file://trq44ztwve9s2b5b
+
+----
+
+Hero-intro:
+
+Åpen for alle nivåer og aldre. Faste åpningstider, arrangementer og et godt miljø midt i Tønsberg.
+
+----
+
+Hero-image: - file://ud5volxzcfyblhio
+
+----
+
+Hero-primary-button-text: Bli medlem
+
+----
+
+Hero-secondary-button-text: Kontakt oss
+
+----
+
+Opening-icon: - file://vblqjuauywjxabsl
+
+----
+
+Opening-label:
+
+Åpningstider
+
+----
+
+Opening-title: Messehall B
+
+----
+
+Opening-intro: Messehall B er et tilbud til alle som ønsker å skate når det er regn eller snø. Vi holder som regel åpent faste dager i uka. Følg med på facebook om du er usikker.
+
+----
+
+Opening-notice: 
+
+----
+
+Opening-notice-enabled: true
+
+----
+
+Opening-hours:
+
+- 
+  day: Mandag
+  time: Stengt
+- 
+  day: Tirsdag
+  time: 17:00–21:00
+- 
+  day: Onsdag
+  time: Stengt
+- 
+  day: Torsdag
+  time: 17:00–21:00
+- 
+  day: Fredag
+  time: Stengt
+- 
+  day: Lørdag
+  time: 10:00–16:00
+- 
+  day: Søndag
+  time: Stengt
+
+----
+
+Opening-button-text: Les mer om åpningstider
+
+----
+
+Events-icon: 
+
+----
+
+Events-label: Arrangementer
+
+----
+
+Events-title: Hold deg oppdatert på hva som skjer
+
+----
+
+Events-intro: Vi har ukentlige arrangementer og arrangementer som skjer gjennom hele året.
+
+----
+
+Events-button-text: Se alle arrangementer
+
+----
+
+About-icon: 
+
+----
+
+About-label: Om oss
+
+----
+
+About-title: Dette er TBGSBK
+
+----
+
+About-intro: En lokal klubb med hjertet på riktig sted. Siden starten har vi bygget et miljø der alle — enten du er 12 eller 30, nybegynner eller erfaren — føler seg velkommen.
+
+----
+
+About-secondary-text: Vi er tilknyttet Norges Brettforbund og arbeider aktivt for gode skateforhold i Tønsberg og Vestfold.
+
+----
+
+About-image: 
+
+----
+
+About-button-text: Om klubben
+
+----
+
+Support-icon: 
+
+----
+
+Support-label: Sponsorer
+
+----
+
+Support-title: Prosjekter og støtte
+
+----
+
+Support-intro: Tønsberg Skateboardklubb jobber aktivt med prosjekter som skaper aktivitet, inkludering og skateglede i lokalmiljøet.
+
+----
+
+Support-secondary-text: Gjennom støtte fra stiftelser, kommunen og samarbeidspartnere har vi gjennomført en rekke tiltak for barn, ungdom og voksne.
+
+----
+
+Support-image: 
+
+----
+
+Support-button-text: Om sponsorer
+
+----
+
+Faq-icon: 
+
+----
+
+Faq-label: FAQ
+
+----
+
+Faq-title: Lurer du på noe?
+
+----
+
+Faq-intro: Ikke noe svar her? Ta kontakt, så hjelper vi deg.
+
+----
+
+Faq-button-text: Kontakt oss
+
+----
+
+Faq:
+
+- 
+  sporsmal: Kan jeg bli med uten erfaring?
+  svar: >
+    Absolutt. Vi har egne
+    nybegynnertreninger og erfarne
+    medlemmer som er glade for å hjelpe.
+    Du trenger ikke kunne stå på brett fra
+    før.
+- 
+  sporsmal: Hvem er klubben for?
+  svar: >
+    Klubben er for alle aldre og nivåer,
+    fra de minste barna til voksne
+    skatere.
+- 
+  sporsmal: >
+    Holder dere til innendørs eller
+    utendørs?
+  svar: >
+    Vi bruker Messehall B om vinteren og
+    betongparken i Gunnarsbøparken om
+    sommeren.
+- 
+  sporsmal: Har dere faste treninger?
+  svar: >
+    Ja, vi har faste dager i Messehall B.
+    Se åpningstidene over.
+- 
+  sporsmal: Trenger jeg eget utstyr?
+  svar: >
+    Vi har noe utlånsutstyr i hallen, men
+    det er alltid best å ha sitt eget.
+
+----
+
+Cta-label: Bli en del av miljøet
+
+----
+
+Cta-title: Vil du skate sammen med oss?
+
+----
+
+Cta-text: Som medlem blir du en del av et inkluderende fellesskap med tilgang til arrangementer, sessions, skateskoler og aktivitet gjennom året.
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Gallery-icon: 
+
+----
+
+Gallery-label: Galleri
+
+----
+
+Gallery-title: Bilder fra klubben
+
+----
+
+Gallery-intro: 
+
+----
+
+Gallery-featured-image: 
+
+----
+
+Gallery-images: 
+
+----
+
+Gallery-button-text: Se alle bilder
+
+----
+
+Meta-description: Tønsberg Skateboardklubb er åpen for alle nivåer og aldre. Bli med i skatemiljøet i Tønsberg og finn åpningstider, arrangementer og medlemsinfo på ett sted.
+
+----
+
+Uuid: l2mio0r8pisfozrl

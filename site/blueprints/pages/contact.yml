@@ -1,0 +1,142 @@
+title: Kontaktside
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_ingress:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+      contact:
+        type: fields
+        headline: Kontaktpersoner
+        fields:
+          people_label:
+            label: Label
+            type: text
+          people_title:
+            label: Tittel
+            type: text
+          contact_intro:
+            label: Intro til kontaktseksjonen
+            type: textarea
+            rows: 4
+          kontaktpersoner:
+            label: Kontaktpersoner
+            type: structure
+            columns:
+              navn:
+                label: Navn
+                width: 1/3
+              rolle:
+                label: Rolle
+                width: 1/3
+              epost:
+                label: E-post
+                width: 1/3
+            fields:
+              navn:
+                label: Navn
+                type: text
+                required: true
+              rolle:
+                label: Rolle
+                type: text
+              epost:
+                label: E-post
+                type: email
+              telefon:
+                label: Telefon
+                type: tel
+      formSection:
+        type: fields
+        headline: Send melding
+        fields:
+          form_label:
+            label: Label
+            type: text
+          form_title:
+            label: Tittel
+            type: text
+          form_intro:
+            label: Intro
+            type: textarea
+            rows: 3
+          form_name_label:
+            label: Navn-felt
+            type: text
+          form_email_label:
+            label: E-post-felt
+            type: text
+          form_message_label:
+            label: Meldingsfelt
+            type: text
+          form_submit_text:
+            label: Knappetekst
+            type: text
+      metaSection:
+        type: fields
+        headline: Meta-info
+        fields:
+          social_label:
+            label: Label for sosiale medier
+            type: text
+          social_text:
+            label: Tekst for sosiale medier
+            type: textarea
+            rows: 3
+          address_label:
+            label: Label for adresse
+            type: text
+          address_text:
+            label: Adressetekst
+            type: textarea
+            rows: 3
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160

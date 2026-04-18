@@ -1,0 +1,141 @@
+title: Åpningstider
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+      season:
+        type: fields
+        headline: Sesongstatus
+        fields:
+          season_label:
+            label: Label
+            type: text
+          season_title:
+            label: Tittel
+            type: text
+          season_intro:
+            label: Intro
+            type: textarea
+            rows: 3
+          season_rows:
+            label: Statusrader
+            type: structure
+            fields:
+              day:
+                label: Venstre kolonne
+                type: text
+              time:
+                label: Høyre kolonne
+                type: text
+          season_note:
+            label: Tekst under listen
+            type: textarea
+            rows: 2
+      location:
+        type: fields
+        headline: Finn oss
+        fields:
+          location_label:
+            label: Label
+            type: text
+          location_title:
+            label: Tittel
+            type: text
+          indoor_label:
+            label: Label for innendørshall
+            type: text
+          indoor_text:
+            label: Tekst for innendørshall
+            type: textarea
+            rows: 2
+          outdoor_label:
+            label: Label for betongpark
+            type: text
+          outdoor_text:
+            label: Tekst for betongpark
+            type: textarea
+            rows: 2
+          contact_label:
+            label: Label for kontakt
+            type: text
+          contact_text:
+            label: Kontakttekst
+            type: textarea
+            rows: 2
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_label:
+            label: Label
+            type: text
+          cta_title:
+            label: Tittel
+            type: text
+          cta_text:
+            label: Tekst
+            type: textarea
+            rows: 3
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+          cta_image:
+            label: CTA-bilde
+            type: files
+            max: 1
+            layout: cards
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse
+            type: textarea
+            rows: 2
+            maxlength: 160

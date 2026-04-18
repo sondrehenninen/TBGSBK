@@ -1,0 +1,103 @@
+Title: Kontakt oss
+
+----
+
+Meta-description: Ta kontakt med Tønsberg Skateboardklubb. Send oss en melding, finn oss på kartet eller følg oss på Instagram og Facebook.
+
+----
+
+Hero-title: Vi hører gjerne fra deg
+
+----
+
+Hero-ingress: Spørsmål om innmelding, treninger, arrangementer eller noe annet? Send oss en melding så svarer vi så fort vi kan.
+
+----
+
+Hero-primary-button-text: Send e-post
+
+----
+
+Hero-secondary-button-text: Bli medlem
+
+----
+
+People-label: Kontaktpersoner
+
+----
+
+People-title: Hvem kan hjelpe deg?
+
+----
+
+Contact-intro: Her finner du de vanligste kontaktpunktene i klubben. Er du usikker på hvem du skal spørre, kan du starte med styreleder.
+
+----
+
+Kontaktpersoner:
+
+- navn: Alexander Angell-Petersen
+  rolle: Styreleder
+  epost: alexanderlap@live.com
+  telefon: 45412255
+- navn: Kristin Goderstad
+  rolle: Hallansvarlig Messehall B
+  epost: kristingoderstad@gmail.com
+  telefon: 92254321
+- navn: Torfinn Blokkum Flø
+  rolle: Nestleder
+  epost: torfinn77@hotmail.com
+  telefon: 95937911
+- navn: Elisabeth Stiglic
+  rolle: Barneidrettsansvarlig
+  epost: elisabethstiglic@gmail.com
+  telefon: 91259659
+
+----
+
+Form-label: Send melding
+
+----
+
+Form-title: Fortell oss hva det gjelder
+
+----
+
+Form-intro: Spør om innmelding, treninger, arrangementer eller noe annet du lurer på. Vi svarer så fort vi kan.
+
+----
+
+Form-name-label: Navn
+
+----
+
+Form-email-label: E-post
+
+----
+
+Form-message-label: Hva gjelder det?
+
+----
+
+Form-submit-text: Send melding
+
+----
+
+Social-label: Sosiale medier
+
+----
+
+Social-text: Følg oss på [Instagram](https://instagram.com/tbgsbk) og [Facebook](https://facebook.com/tbgsbk) for nyheter, bilder og arrangementer.
+
+----
+
+Address-label: Adresse
+
+----
+
+Address-text: Messehall B (innendørshall, sesong)  
+Gunnarsbøparken (betongpark, sommer)
+
+----
+
+Uuid: rduh1rfsm1ob5uye

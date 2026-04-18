@@ -1,0 +1,21 @@
+title: Sponsor
+
+options:
+  changeTemplate: false
+
+fields:
+  title:
+    label: Navn
+    type: text
+    required: true
+  sponsor_type:
+    label: Type
+    type: text
+    placeholder: "Stiftelse"
+  link:
+    label: Nettside
+    type: url
+  description:
+    label: Beskrivelse
+    type: textarea
+    rows: 4

@@ -1,0 +1,108 @@
+Title: Åpningstider
+
+----
+
+Meta-description: Se åpningstider, treningsplan og adresse for Tønsberg Skateboardklubb. Vi holder til i Tønsberg og er åpne hele uken.
+
+----
+
+Hero-title: Åpningstider og sted
+
+----
+
+Hero-intro: Vi holder til i Tønsberg sentrum. Her ser du hvor du finner oss og hvordan sesongen fordeler seg mellom hallen og uteparken.
+
+----
+
+Hero-primary-button-text: Bli medlem
+
+----
+
+Hero-secondary-button-text: Kontakt oss
+
+----
+
+Season-label: Sesongstatus
+
+----
+
+Season-title: Messehall B
+
+----
+
+Season-intro: Messehall B er sesongstengt frem til september. Ekstraordinære åpningstider kan forekomme og vil bli kunngjort på Facebook-gruppen og Instagram.
+
+----
+
+Season-rows:
+
+- day: Innendørshall
+  time: Stengt — åpner igjen i september
+- day: Betongpark
+  time: Gunnarsbøparken — åpen hele sommeren
+
+----
+
+Season-note: Følg oss på sosiale medier for oppdaterte tidspunkter og arrangementer.
+
+----
+
+Location-label: Finn oss
+
+----
+
+Location-title: Adresse
+
+----
+
+Indoor-label: Innendørshall
+
+----
+
+Indoor-text:
+
+Messehall B, Tønsberg  
+(sesongstengt — åpner september)
+
+----
+
+Outdoor-label: Betongpark
+
+----
+
+Outdoor-text:
+
+Gunnarsbøparken, Tønsberg  
+(åpen hele sommerhalvåret)
+
+----
+
+Contact-label: Kontakt
+
+----
+
+Contact-text: Spørsmål om treningstidene? [Kontakt oss](/kontakt).
+
+----
+
+Cta-label: Vil du trene fast?
+
+----
+
+Cta-title: Bli med i klubben
+
+----
+
+Cta-text: Medlemmer får fri tilgang til alle åpne treninger og rabatt på kurs og arrangementer.
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Uuid: knhutfutbrixd7ah

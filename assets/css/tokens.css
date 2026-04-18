@@ -1,0 +1,39 @@
+:root {
+  /* Fonter */
+  --font-display: "alfabet", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Farger */
+  --color-bg: #f7fbfb;
+  --color-surface: #ffffff;
+  --color-surface-mint: #a8faaa;
+  --color-surface-blue: #ddf5f5;
+  --color-surface-contrast: #a8faaa;
+  --color-surface-dark: #162333;
+  --color-accent: #ffb800;
+  --color-accent-hover: #e5a500;
+  --color-text: #162333;
+  --color-text-muted: rgba(22, 35, 51, 0.74);
+  --color-text-faint: rgba(22, 35, 51, 0.56);
+  --color-border: rgba(22, 35, 51, 0.12);
+  --color-header-bg: rgba(247, 251, 251, 0.96);
+  --color-overlay: rgba(22, 35, 51, 0.42);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+  --space-9: 128px;
+  --space-10: 208px;
+
+  /* Layout */
+  --container-width: 1320px;
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}

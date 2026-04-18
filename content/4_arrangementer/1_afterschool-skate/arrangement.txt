@@ -1,0 +1,41 @@
+Title: Afterschool Skate
+
+----
+
+Tag: Ukentlig
+
+----
+
+Date-label: Tirsdager kl. 17:00
+
+----
+
+Start-date: 2026-09-01
+
+----
+
+End-date: 2026-12-31
+
+----
+
+Location: Messehall B, Tønsberg
+
+----
+
+Intro: Et lavterskel tilbud etter skoletid for barn og ungdom som vil ha et fast sted å dra, med voksne og erfarne klubbfolk i nærheten.
+
+----
+
+Description:
+
+Afterschool Skate er en fast klubbøkt for barn og ungdom som ønsker å skate i trygge rammer og bli kjent med miljøet.
+
+Du trenger ikke å kjenne noen fra før. Økten er laget for å gjøre terskelen lav, og det er alltid mulig å spørre om hjelp eller råd underveis.
+
+----
+
+Meta-description: Afterschool Skate er et fast lavterskeltilbud i Tønsberg Skateboardklubb for barn og ungdom som vil skate etter skoletid.
+
+----
+
+Uuid: flmdspk70hopgrrn

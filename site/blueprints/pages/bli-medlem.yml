@@ -1,0 +1,217 @@
+title: Bli medlem
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+      intro:
+        type: fields
+        headline: Hvorfor bli med
+        fields:
+          intro_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          intro_label:
+            label: Label
+            type: text
+          intro_title:
+            label: Tittel
+            type: text
+          intro_body:
+            label: Tekst
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          primary_image:
+            label: Hovedbilde
+            type: files
+            max: 1
+            layout: cards
+      benefits:
+        type: fields
+        headline: Fordeler
+        fields:
+          benefits_label:
+            label: Label
+            type: text
+          benefits_title:
+            label: Tittel
+            type: text
+          benefits:
+            label: Fordelskort
+            type: structure
+            fields:
+              tag:
+                label: Tag
+                type: text
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 3
+      steps:
+        type: fields
+        headline: Slik fungerer det
+        fields:
+          steps_label:
+            label: Label
+            type: text
+          steps_title:
+            label: Tittel
+            type: text
+          steps:
+            label: Steg
+            type: structure
+            fields:
+              tag:
+                label: Nummer / tag
+                type: text
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 3
+      practical:
+        type: fields
+        headline: Praktisk info
+        fields:
+          practical_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          practical_label:
+            label: Label
+            type: text
+          practical_title:
+            label: Tittel
+            type: text
+          practical_notes:
+            label: Punkter
+            type: structure
+            fields:
+              text:
+                label: Punkt
+                type: text
+          practical_primary_button_text:
+            label: Primærknapp
+            type: text
+          practical_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          secondary_image:
+            label: Seksjonsbilde
+            type: files
+            max: 1
+            layout: cards
+      faqSection:
+        type: fields
+        headline: FAQ section
+        fields:
+          faq_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          faq_label:
+            label: Label
+            type: text
+          faq_title:
+            label: Tittel
+            type: text
+          faq_intro:
+            label: Intro
+            type: textarea
+            rows: 3
+          faq:
+            label: Vanlige spørsmål
+            type: structure
+            fields:
+              sporsmal:
+                label: Spørsmål
+                type: text
+              svar:
+                label: Svar
+                type: textarea
+                rows: 3
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_label:
+            label: Label
+            type: text
+          cta_title:
+            label: Tittel
+            type: text
+          cta_text:
+            label: Tekst
+            type: textarea
+            rows: 3
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+          cta_image:
+            label: CTA-bilde
+            type: files
+            max: 1
+            layout: cards
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse
+            type: textarea
+            rows: 2
+            maxlength: 160

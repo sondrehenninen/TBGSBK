@@ -1,0 +1,41 @@
+Title: Girlskate
+
+----
+
+Tag: Ukentlig
+
+----
+
+Date-label: Torsdager kl. 17:00
+
+----
+
+Start-date: 2026-09-03
+
+----
+
+End-date: 2026-12-31
+
+----
+
+Location: Messehall B, Tønsberg
+
+----
+
+Intro: Egne sesjoner for jenter som vil prøve skating, bygge trygghet eller møte andre i samme miljø.
+
+----
+
+Description:
+
+Girlskate er laget for å gi et trygt og inkluderende rom for jenter som vil komme i gang eller utvikle seg videre i eget tempo.
+
+Øktene skal gjøre det lettere å finne trygghet, fellesskap og mestring sammen med andre i miljøet.
+
+----
+
+Meta-description: Girlskate er en trygg og inkluderende klubbøkt for jenter i Tønsberg Skateboardklubb.
+
+----
+
+Uuid: oc69ua5h7zm0fs4f

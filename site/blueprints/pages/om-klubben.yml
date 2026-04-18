@@ -1,0 +1,254 @@
+title: Om klubben
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+      intro:
+        type: fields
+        headline: Hvem vi er
+        fields:
+          intro_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          intro_label:
+            label: Label
+            type: text
+          intro_title:
+            label: Tittel
+            type: text
+          intro_body:
+            label: Venstre tekst
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          intro_button_text:
+            label: Knappetekst
+            type: text
+          primary_image:
+            label: Hovedbilde
+            type: files
+            max: 1
+            layout: cards
+          intro_story:
+            label: Tekst ved siden av bildet
+            type: textarea
+            buttons: [bold, italic, link, ul]
+      values:
+        type: fields
+        headline: Miljøet vårt
+        fields:
+          values_label:
+            label: Label
+            type: text
+          values_title:
+            label: Tittel
+            type: text
+          values_items:
+            label: Verdikort
+            type: structure
+            fields:
+              icon:
+                label: Ikon
+                type: files
+                max: 1
+                layout: cards
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 3
+      location:
+        type: fields
+        headline: Hvor vi holder til
+        fields:
+          location_icon:
+            label: Seksjonsikon
+            type: files
+            max: 1
+            layout: cards
+          location_label:
+            label: Label
+            type: text
+          location_title:
+            label: Tittel
+            type: text
+          location_body:
+            label: Venstre tekst
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          location_notes:
+            label: Punkter
+            type: structure
+            fields:
+              text:
+                label: Punkt
+                type: text
+          location_primary_button_text:
+            label: Primærknapp
+            type: text
+          location_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          secondary_image:
+            label: Seksjonsbilde
+            type: files
+            max: 1
+            layout: cards
+          location_story:
+            label: Tekst ved siden av bildet
+            type: textarea
+            buttons: [bold, italic, link, ul]
+      projects:
+        type: fields
+        headline: Pågående prosjekter
+        fields:
+          projects_label:
+            label: Label
+            type: text
+          projects_title:
+            label: Tittel
+            type: text
+          projects_button_text:
+            label: Knappetekst
+            type: text
+          projects:
+            label: Prosjektkort
+            type: structure
+            fields:
+              tag:
+                label: Tag
+                type: text
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 3
+          results_title:
+            label: Tittel for resultater
+            type: text
+          results:
+            label: Resultatkort
+            type: structure
+            fields:
+              tag:
+                label: Tag
+                type: text
+              title:
+                label: Tittel
+                type: text
+              text:
+                label: Tekst
+                type: textarea
+                rows: 4
+      team:
+        type: fields
+        headline: Folkene bak
+        fields:
+          team_label:
+            label: Label
+            type: text
+          team_title:
+            label: Tittel
+            type: text
+          team_members:
+            label: Team-medlemmer
+            type: structure
+            columns:
+              name:
+                width: 1/3
+              role:
+                width: 1/3
+              email:
+                width: 1/3
+            fields:
+              name:
+                label: Navn
+                type: text
+              role:
+                label: Rolle
+                type: text
+              email:
+                label: E-post
+                type: email
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_label:
+            label: Label
+            type: text
+          cta_title:
+            label: Tittel
+            type: text
+          cta_text:
+            label: Tekst
+            type: textarea
+            rows: 3
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+          cta_image:
+            label: CTA-bilde
+            type: files
+            max: 1
+            layout: cards
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse
+            type: textarea
+            rows: 2
+            maxlength: 160

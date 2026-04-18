@@ -1,0 +1,197 @@
+Title: Om klubben
+
+----
+
+Meta-description: Lær mer om Tønsberg Skateboardklubb, miljøet vi bygger, prosjektene vi jobber med og menneskene bak klubben.
+
+----
+
+Hero-title: Et sted å høre til, uansett nivå
+
+----
+
+Hero-intro: Tønsberg Skateboardklubb er en frivillig og ideell klubb som bygger miljø, mestring og skateglede for barn, ungdom og voksne i Tønsberg.
+
+----
+
+Hero-primary-button-text: Bli medlem
+
+----
+
+Hero-secondary-button-text: Kontakt oss
+
+----
+
+Intro-label: Hvem vi er
+
+----
+
+Intro-title: Frivillig drevet og rotfestet i Tønsberg
+
+----
+
+Intro-body:
+
+Klubben drives av et engasjert styre og et aktivt miljø rundt skating i Tønsberg. Ambisjonen er enkel: gjøre det lettere å komme i gang, finne et fellesskap og bli værende over tid.
+
+----
+
+Intro-button-text: Kontakt klubben
+
+----
+
+Intro-story:
+
+Tønsberg Skateboardklubb er en frivillig, ideell organisasjon som arbeider for å fremme skateboardkulturen i Tønsberg og omegn. Vi ønsker å skape et inkluderende miljø der både barn, unge og voksne kan oppleve mestring, fellesskap og skateglede.
+
+Gjennom samarbeid med Tønsberg kommune, UNG Tønsberg og flere stiftelser har klubben arrangert skateskoler, aktiviteter og samlinger med særlig fokus på rekruttering av nye skatere og forebygging av utenforskap.
+
+----
+
+Values-label: Miljøet vårt
+
+----
+
+Values-title: Det vi vil at klubben skal kjennes som
+
+----
+
+Values-items:
+
+- title: Lav terskel for å bli med
+  text: Du trenger ikke å kjenne noen fra før eller være god for å passe inn. Klubben skal være et trygt sted å starte og et godt sted å bli værende.
+- title: Bygget rundt Tønsberg-miljøet
+  text: Vi holder til i Messehall B og Gunnarsbøparken, og jobber hele tiden for å gjøre tilbudet sterkere for alle som skater i området.
+- title: Mer enn bare en skateøkt
+  text: Klubben skaper aktivitet, ansvarsfølelse og fellesskap gjennom sessions, arrangementer, opplæring og frivillig innsats.
+
+----
+
+Location-label: Hvor vi holder til
+
+----
+
+Location-title: To samlingspunkter gjennom året
+
+----
+
+Location-body:
+
+Klubben holder til i Messehall B, som i dag fungerer som midlertidig innendørshall, og i betongparken i Gunnarsbøparken som er et sentralt møtested i sommerhalvåret.
+
+----
+
+Location-notes:
+
+- text: Messehall B gir et innendørstilbud når vær og sesong gjør uteparken mindre aktuell.
+- text: Gunnarsbøparken er et naturlig samlingspunkt når sesongen er i gang.
+- text: Klubbens hjertesak er å etablere en permanent innendørshall for skating i Tønsberg.
+
+----
+
+Location-primary-button-text: Se åpningstider
+
+----
+
+Location-secondary-button-text: Spør oss
+
+----
+
+Location-story:
+
+Messehall B fungerer i dag som midlertidig innendørshall og gir klubben et viktig helårstilbud når vær og sesong gjør uteparken mindre aktuell.
+
+I sommerhalvåret er Gunnarsbøparken et naturlig møtested for sessions, arrangementer og lavterskel skating. Sammen utgjør de to stedene grunnmuren i klubbens aktivitet gjennom året.
+
+----
+
+Projects-label: Pågående prosjekter
+
+----
+
+Projects-title: Det vi jobber med nå
+
+----
+
+Projects-button-text: Se støtte og samarbeid
+
+----
+
+Projects:
+
+- tag: Hall
+  title: Permanent innendørshall
+  text: Et helårstilbud er avgjørende for å sikre trening, utvikling og fellesskap gjennom hele året, uavhengig av vær og sesong.
+- tag: Park
+  title: Miniramp i betongparken
+  text: En ny miniramp vil gi et bredere aktivitetstilbud, både for nybegynnere som vil lære og for erfarne skatere som ønsker flere linjer og muligheter.
+- tag: Park
+  title: Ny asfaltstripe
+  text: Et nytt og tryggere underlag vil gjøre parken bedre egnet for daglig bruk, læring og fremtidige arrangementer.
+
+----
+
+Results-title: Noe av det vi allerede har fått til allerede
+
+----
+
+Results:
+
+- tag: "2025"
+  title: Sommerskate 2025
+  text: Åtte dager med aktivitet som samlet rundt 50 påmeldte barn og ungdom. Prosjektet ble muliggjort gjennom støtte fra Gjensidigestiftelsen og frivillig innsats fra klubbmiljøet. Zuccarellostiftelsen bidro også til utlånsutstyr og beskyttelse.
+- tag: "2025"
+  title: Nye skateelementer i Messehall B
+  text: Corner med curb, A-frame, quarterpipe og C-curb ga hallen nye linjer og bedre flyt. Gjennomført med støtte fra Sparebankstiftelsen DNB.
+- tag: "2024"
+  title: Utvidelse av Messehall B
+  text: Miniramp, mannypad, flatbar og quarterpipe ble bygget for å fornye hallen og gi bedre treningsmuligheter for flere nivåer.
+
+----
+
+Team-label: Folkene bak
+
+----
+
+Team-title: Styret og ansvarspersoner
+
+----
+
+Team-members:
+
+- name: Alexander Angell-Petersen
+  role: Styreleder
+  email: alexanderlap@live.com
+- name: Kristin Goderstad
+  role: Hallansvarlig Messehall B
+  email: kristingoderstad@gmail.com
+- name: Torfinn Blokkum Flø
+  role: Nestleder
+  email: torfinn77@hotmail.com
+- name: Elisabeth Stiglic
+  role: Barneidrettsansvarlig
+  email: elisabethstiglic@gmail.com
+
+----
+
+Cta-label: Bli en del av miljøet
+
+----
+
+Cta-title: Vil du skate sammen med oss?
+
+----
+
+Cta-text: Som medlem blir du en del av et inkluderende fellesskap med tilgang til arrangementer, sessions, skateskoler og aktivitet gjennom året.
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Uuid: mrin4xu54e46fwnm

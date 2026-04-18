@@ -1,0 +1,142 @@
+title: Side
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+          label:
+            label: Seksjonslabel
+            type: text
+            placeholder: "Om klubben"
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 4
+      main:
+        type: fields
+        headline: Hovedseksjon
+        fields:
+          body:
+            label: Hovedinnhold
+            type: textarea
+            buttons: [bold, italic, link, ul]
+      secondary:
+        type: fields
+        headline: Sekundær seksjon
+        fields:
+          secondary_title:
+            label: Seksjonstittel 2
+            type: text
+          secondary_body:
+            label: Sekundært innhold
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          highlights:
+            label: Punkter / høydepunkter
+            type: structure
+            fields:
+              text:
+                label: Punkt
+                type: text
+      faqSection:
+        type: fields
+        headline: FAQ section
+        fields:
+          faq:
+            label: Vanlige spørsmål
+            type: structure
+            fields:
+              sporsmal:
+                label: Spørsmål
+                type: text
+              svar:
+                label: Svar
+                type: textarea
+                rows: 3
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_title:
+            label: CTA-tittel
+            type: text
+          cta_text:
+            label: CTA-tekst
+            type: textarea
+            rows: 3
+  bilder:
+    label: Bilder
+    icon: image
+    sections:
+      heroImage:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+      mainImage:
+        type: fields
+        headline: Hovedseksjon
+        fields:
+          primary_image:
+            label: Hovedbilde
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+      secondaryImage:
+        type: fields
+        headline: Sekundær seksjon
+        fields:
+          secondary_image:
+            label: Sekundært bilde
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+      ctaImage:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_image:
+            label: CTA-bilde
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              template: image
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160

@@ -1,0 +1,358 @@
+/* Sidespecifikke stiler — Tønsberg Skateboardklubb */
+
+.media-frame {
+  --media-frame-max-height: 700px;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.media-frame--large {
+  --media-frame-max-height: 700px;
+}
+
+.media-frame--medium {
+  --media-frame-max-height: 550px;
+}
+
+.media-frame--small {
+  --media-frame-max-height: 400px;
+}
+
+.media-frame:is(img) {
+  display: block;
+  width: 100%;
+  height: min(var(--media-frame-max-height), 60vw);
+  max-height: var(--media-frame-max-height);
+  object-fit: cover;
+}
+
+.media-frame > img {
+  display: block;
+  width: 100%;
+  height: min(var(--media-frame-max-height), 60vw);
+  max-height: var(--media-frame-max-height);
+  object-fit: cover;
+}
+
+.section-icon {
+  display: block;
+  pointer-events: none;
+  width: auto;
+  height: auto;
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.section-heading {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.section-copy {
+  display: grid;
+  align-content: start;
+}
+
+.section-copy > .section-icon {
+  margin-bottom: var(--space-5);
+}
+
+.section-heading--split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-5);
+}
+
+.section-heading--stack {
+  align-items: start;
+}
+
+.sponsor-section {
+  padding-bottom: var(--space-7);
+}
+
+.sponsor-band {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-media {
+  align-self: start;
+}
+
+.sponsor-media {
+  align-self: start;
+}
+
+.gallery-heading {
+  margin-bottom: var(--space-6);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.project-card {
+  min-height: 100%;
+  padding: var(--space-5);
+  border: 1px solid rgba(38, 55, 76, 0.4);
+  border-radius: var(--radius-md);
+  display: grid;
+  align-content: start;
+  gap: var(--space-5);
+}
+
+.project-card__tag,
+.result-card__tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.project-card__tag {
+  background: var(--color-surface-blue);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.project-card p {
+  max-width: 36ch;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.results-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.results-intro h3 {
+  max-width: 14ch;
+}
+
+.results-list {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.result-card {
+  padding: 33px;
+  border: 1px solid rgba(22, 35, 51, 0.25);
+  border-radius: 8px;
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  background: var(--color-bg);
+}
+
+.result-card__tag {
+  background: var(--color-support);
+}
+
+.result-card h4 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.result-card p {
+  max-width: 56ch;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.team-grid {
+  gap: var(--space-5);
+}
+
+.contact-layout {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+.contact-layout__people,
+.contact-layout__form {
+  display: grid;
+  align-content: start;
+  gap: var(--space-5);
+}
+
+.contact-team {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.contact-form-panel {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid rgba(38, 55, 76, 0.4);
+  border-radius: var(--radius-md);
+}
+
+.contact-form-panel > p {
+  max-width: 48ch;
+}
+
+.contact-meta {
+  display: grid;
+  gap: var(--space-4);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-meta p a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.value-card {
+  min-height: 100%;
+  padding: var(--space-5);
+  border: 1px solid rgba(38, 55, 76, 0.4);
+  border-radius: var(--radius-md);
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: var(--space-5);
+  text-align: center;
+}
+
+.value-card__icon {
+  width: auto;
+  height: auto;
+  max-width: 111px;
+  max-height: 98px;
+}
+
+.value-card__icon--narrow {
+  max-width: 79px;
+}
+
+.value-card__icon--wide {
+  max-width: 161px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.value-card p {
+  max-width: 36ch;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.program-card {
+  align-content: start;
+}
+
+.program-card__icon {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 88px;
+  max-height: 88px;
+  margin-bottom: var(--space-4);
+}
+
+.program-card__meta {
+  color: var(--color-text-faint);
+  font-size: 0.9375rem;
+}
+
+.about-story {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.about-story__body {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 60ch;
+}
+
+.notes-list {
+  display: grid;
+  gap: var(--space-3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.notes-list li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.notes-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+@media (max-width: 860px) {
+  .section-heading--split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-grid,
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .results-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .section-copy > .section-icon {
+    margin-bottom: var(--space-3);
+  }
+
+  .media-frame > img {
+    height: 360px;
+  }
+}

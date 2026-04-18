@@ -1,0 +1,41 @@
+Title: Skate and Scoot
+
+----
+
+Tag: Sommeren 2026
+
+----
+
+Date-label: 21.–22. juni 2026
+
+----
+
+Start-date: 2026-06-21
+
+----
+
+End-date: 2026-06-22
+
+----
+
+Location: Gunnarsbøparken, Tønsberg
+
+----
+
+Intro: Felles økter for flere hjulmiljøer, med fokus på respekt, trygghet og god flyt i parken.
+
+----
+
+Description:
+
+Skate and Scoot samler ulike hjulmiljøer i en felles ramme med fokus på aktivitet, inkludering og god stemning.
+
+Arrangementet passer for flere nivåer og fungerer både som møteplass og aktivitetstilbud i sommerhalvåret.
+
+----
+
+Meta-description: Skate and Scoot samler flere hjulmiljøer til aktivitet og fellesskap i Tønsberg Skateboardklubb.
+
+----
+
+Uuid: tiopfsqmokmuw3lx

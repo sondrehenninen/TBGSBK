@@ -1,0 +1,41 @@
+Title: Vaffelskate
+
+----
+
+Tag: Arrangement
+
+----
+
+Date-label: 22. juli kl. 12:00
+
+----
+
+Start-date: 2026-07-22
+
+----
+
+End-date: 2026-07-22
+
+----
+
+Location: Gunnarsbøparken, Tønsberg
+
+----
+
+Intro: En av klubbens hyggeligste samlinger, der skating kombineres med mat, pauser og tid til å henge sammen.
+
+----
+
+Description:
+
+Vaffelskate er et sosialt arrangement med lav terskel, åpen stemning og plass til både nye og erfarne skatere.
+
+Målet er å samle klubbmiljøet rundt skating, prat og noe godt å spise, og gjøre det ekstra lett å komme innom.
+
+----
+
+Meta-description: Vaffelskate er et sosialt arrangement i Tønsberg Skateboardklubb med skating, fellesskap og lav terskel.
+
+----
+
+Uuid: bhvq5zooim3fhtvv

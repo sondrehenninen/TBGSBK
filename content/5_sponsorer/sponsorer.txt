@@ -1,0 +1,75 @@
+Title: Sponsorer
+
+----
+
+Meta-description: Takk til sponsorene og støttespillerne som gjør Tønsberg Skateboardklubb mulig.
+
+----
+
+Hero-title: Sponsorer og støttespillere
+
+----
+
+Intro: Klubben drives på dugnad og med støtte fra lokale bedrifter, stiftelser og samarbeidspartnere. En stor takk til alle som gjør dette mulig.
+
+----
+
+Hero-primary-button-text: Ta kontakt
+
+----
+
+Hero-secondary-button-text: Bli medlem
+
+----
+
+Sponsors-label: Våre sponsorer
+
+----
+
+Sponsors-title: Takk til
+
+----
+
+Support-label: Støtte fra det offentlige
+
+----
+
+Support-title: Tilskudd og prosjekter
+
+----
+
+Support-text:
+
+Tønsberg Skateboardklubb jobber aktivt med prosjekter som skaper aktivitet, inkludering og skateglede i lokalmiljøet.
+
+Gjennom støtte fra stiftelser, kommunen og samarbeidspartnere har vi gjennomført en rekke tiltak for barn, ungdom og voksne.
+
+Har din organisasjon eller bedrift lyst til å støtte oss? Ta kontakt — vi er alltid åpne for samarbeid.
+
+----
+
+Support-link-text: Kontakt oss
+
+----
+
+Cta-label: Bli sponsor
+
+----
+
+Cta-title: Støtt lokal ungdomsidrett
+
+----
+
+Cta-text: Vi tilbyr synlighet for lokale bedrifter som ønsker å støtte et inkluderende idrettsmiljø for unge i Tønsberg. Ta kontakt for å høre mer.
+
+----
+
+Cta-secondary-button-text: Bli medlem
+
+----
+
+Cta-primary-button-text: Ta kontakt
+
+----
+
+Uuid: 9dniksgovnvxfkon

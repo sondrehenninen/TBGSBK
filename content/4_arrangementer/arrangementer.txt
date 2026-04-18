@@ -1,0 +1,135 @@
+Title: Arrangementer
+
+----
+
+Meta-description: Se faste tilbud, camps og aktiviteter i Tønsberg Skateboardklubb. Finn datoer, status og praktisk info på ett sted.
+
+----
+
+Hero-title: Det skjer alltid noe i klubben
+
+----
+
+Intro: Fra faste lavterskeløkter til camps, kurs og sosiale samlinger. Her finner du det som er aktuelt akkurat nå.
+
+----
+
+Hero-primary-button-text: Bli medlem
+
+----
+
+Hero-secondary-button-text: Kontakt oss
+
+----
+
+List-label: Neste på programmet
+
+----
+
+List-title: Kommende arrangementer
+
+----
+
+List-link-text: Kontakt oss om arrangementer
+
+----
+
+Expectation-label: Hva du kan forvente
+
+----
+
+Expectation-title: Skating, samlinger og lav terskel gjennom hele året
+
+----
+
+Expectation-body:
+
+Arrangementssiden samler både faste klubbtilbud og større happenings. Målet er å gjøre det lett å se hva som skjer, hvem det passer for og hvordan du blir med.
+
+Er du usikker på om et arrangement passer nivået ditt, eller om du kan komme uten å kjenne noen? Send oss en melding. Vi hjelper deg i gang.
+
+----
+
+Expectation-primary-button-text: Spør oss først
+
+----
+
+Expectation-secondary-button-text: Se åpningstider
+
+----
+
+Offers-label: Faste tilbud
+
+----
+
+Offers-title: Gjennom året i klubben
+
+----
+
+Offers:
+
+- tag: Ungdom
+  title: Afterschool Skate
+  text: Et lavterskel tilbud etter skoletid for barn og ungdom som vil ha et fast sted å dra, med voksne og erfarne klubbfolk i nærheten.
+  meta: Etter skoletid • Sosialt og trygt
+- tag: Sosialt
+  title: Vaffelskate
+  text: En av klubbens hyggeligste kvelder, der skating kombineres med mat, pauser og tid til å henge sammen.
+  meta: For flere aldre • Lav terskel
+- tag: Alle
+  title: Skate and Scoot
+  text: Felles økter for flere hjulmiljøer, med tydelige rammer og fokus på respekt, trygghet og god flyt i hallen.
+  meta: Åpent nivå • Felles økt
+- tag: Jenter
+  title: Girlskate
+  text: Egne sesjoner for jenter som vil prøve skating, bygge trygghet eller møte andre i samme miljø.
+  meta: Trygt miljø • Fokus på mestring
+
+----
+
+Practical-label: Praktisk info
+
+----
+
+Practical-title: Før du kommer
+
+----
+
+Practical-notes:
+
+- text: Følg Instagram og Facebook for siste oppdateringer og eventuelle endringer.
+- text: Noen arrangementer har begrenset kapasitet og krever at du melder interesse på forhånd.
+- text: Har du eget brett og hjelm, ta det gjerne med. Hvis ikke, spør oss hva som er mulig.
+- text: Er du helt ny, er det lov å møte opp usikker. Vi vil at terskelen skal være lav.
+
+----
+
+Practical-primary-button-text: Kontakt oss
+
+----
+
+Practical-secondary-button-text: Bli medlem
+
+----
+
+Cta-label: Vil du bli med neste gang?
+
+----
+
+Cta-title: Bli medlem og få med deg det som skjer
+
+----
+
+Cta-text: Med medlemskap blir det enklere å følge arrangementer, bli kjent med miljøet og få mer ut av tilbudene klubben setter opp.
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Uuid: uavlnyznab4bcblw

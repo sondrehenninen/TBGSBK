@@ -1,0 +1,116 @@
+title: Sponsorer
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  innhold:
+    label: Innhold
+    icon: text
+    sections:
+      basic:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+      hero:
+        type: fields
+        headline: Hero section
+        fields:
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 4
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+      sponsorSection:
+        type: fields
+        headline: Sponsorliste
+        fields:
+          sponsors_label:
+            label: Label
+            type: text
+          sponsors_title:
+            label: Tittel
+            type: text
+      support:
+        type: fields
+        headline: Støtte og prosjekter
+        fields:
+          support_label:
+            label: Label
+            type: text
+          support_title:
+            label: Tittel
+            type: text
+          support_text:
+            label: Tekst om støtte og prosjekter
+            type: textarea
+            buttons: [bold, italic, link, ul]
+          support_link_text:
+            label: Linktekst
+            type: text
+      cta:
+        type: fields
+        headline: CTA section
+        fields:
+          cta_label:
+            label: Label
+            type: text
+          cta_title:
+            label: CTA-tittel
+            type: text
+          cta_text:
+            label: CTA-tekst
+            type: textarea
+            rows: 3
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+          cta_image:
+            label: CTA-bilde
+            type: files
+            max: 1
+            layout: cards
+      sponsorer:
+        label: Sponsorer
+        type: pages
+        templates:
+          - sponsor
+        create: sponsor
+        sortBy: title asc
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160
