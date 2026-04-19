@@ -1,0 +1,130 @@
+title: Prosjekt
+
+tabs:
+  hero:
+    label: Hero
+    icon: bolt
+    sections:
+      hero:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+
+  status:
+    label: Status
+    icon: check
+    sections:
+      status:
+        type: fields
+        fields:
+          status_label:
+            label: Label
+            type: text
+            width: 1/3
+          status_title:
+            label: Tittel
+            type: text
+            width: 2/3
+          status_intro:
+            label: Intro-tekst
+            type: textarea
+            rows: 3
+          milestones:
+            label: Milepæler
+            type: structure
+            columns:
+              beskrivelse:
+                label: Beskrivelse
+                width: 2/3
+              fullfort:
+                label: Fullført
+                width: 1/3
+            fields:
+              beskrivelse:
+                label: Beskrivelse
+                type: text
+                required: true
+              fullfort:
+                label: Fullført
+                type: toggle
+                default: false
+                text:
+                  - "Nei"
+                  - "Ja"
+
+  mal:
+    label: Mål
+    icon: star
+    sections:
+      mal:
+        type: fields
+        fields:
+          goal_label:
+            label: Label
+            type: text
+            width: 1/3
+          goal_title:
+            label: Tittel
+            type: text
+            width: 2/3
+          goal_text:
+            label: Mål-tekst
+            type: textarea
+            buttons: [bold, italic, link, ul]
+            rows: 6
+
+  cta:
+    label: CTA
+    icon: email
+    sections:
+      cta:
+        type: fields
+        fields:
+          cta_title:
+            label: CTA-tittel
+            type: text
+          cta_text:
+            label: CTA-tekst
+            type: textarea
+            rows: 3
+          cta_button_text:
+            label: Knappetekst
+            type: text
+            width: 1/2
+          cta_button_url:
+            label: Lenke (valgfri – standard: kontaktsiden)
+            type: url
+            width: 1/2
+
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160
