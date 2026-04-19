@@ -24,17 +24,17 @@
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Åpne meny"><?= $site->menu_button_text()->or('Meny')->html() ?></button>
       <nav class="site-nav" id="site-navigation" aria-label="Hovednavigasjon">
-        <?php if ($arrangementer = page('arrangementer')): ?>
-        <a href="<?= $arrangementer->url() ?>" <?php e($arrangementer->isOpen(), 'aria-current="page"') ?>><?= $site->nav_events_text()->or('Arrangementer')->html() ?></a>
+        <?php $navUrl = $site->nav_events_url()->isNotEmpty() ? $site->nav_events_url()->escape() : (($p = page('arrangementer')) ? $p->url() : ''); if ($navUrl): ?>
+        <a href="<?= $navUrl ?>"><?= $site->nav_events_text()->or('Arrangementer')->html() ?></a>
         <?php endif ?>
-        <?php if ($om = page('om-klubben')): ?>
-        <a href="<?= $om->url() ?>" <?php e($om->isOpen(), 'aria-current="page"') ?>><?= $site->nav_about_text()->or('Om klubben')->html() ?></a>
+        <?php $navUrl = $site->nav_about_url()->isNotEmpty() ? $site->nav_about_url()->escape() : (($p = page('om-klubben')) ? $p->url() : ''); if ($navUrl): ?>
+        <a href="<?= $navUrl ?>"><?= $site->nav_about_text()->or('Om klubben')->html() ?></a>
         <?php endif ?>
-        <?php if ($kontakt = page('kontakt')): ?>
-        <a href="<?= $kontakt->url() ?>" <?php e($kontakt->isOpen(), 'aria-current="page"') ?>><?= $site->nav_contact_text()->or('Kontakt oss')->html() ?></a>
+        <?php $navUrl = $site->nav_contact_url()->isNotEmpty() ? $site->nav_contact_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($navUrl): ?>
+        <a href="<?= $navUrl ?>"><?= $site->nav_contact_text()->or('Kontakt oss')->html() ?></a>
         <?php endif ?>
-        <?php if ($medlem = page('bli-medlem')): ?>
-        <a class="nav-cta" href="<?= $medlem->url() ?>" <?php e($medlem->isOpen(), 'aria-current="page"') ?>><?= $site->nav_member_text()->or('Bli medlem')->html() ?></a>
+        <?php $navUrl = $site->nav_member_url()->isNotEmpty() ? $site->nav_member_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($navUrl): ?>
+        <a class="nav-cta" href="<?= $navUrl ?>"><?= $site->nav_member_text()->or('Bli medlem')->html() ?></a>
         <?php endif ?>
       </nav>
     </div>

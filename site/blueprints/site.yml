@@ -96,15 +96,35 @@ tabs:
           nav_events_text:
             label: "Menytekst: Arrangementer"
             type: text
+            width: 1/2
+          nav_events_url:
+            label: "Lenke: Arrangementer (valgfri)"
+            type: url
+            width: 1/2
           nav_about_text:
             label: "Menytekst: Om klubben"
             type: text
+            width: 1/2
+          nav_about_url:
+            label: "Lenke: Om klubben (valgfri)"
+            type: url
+            width: 1/2
           nav_contact_text:
             label: "Menytekst: Kontakt"
             type: text
+            width: 1/2
+          nav_contact_url:
+            label: "Lenke: Kontakt (valgfri)"
+            type: url
+            width: 1/2
           nav_member_text:
             label: "Menytekst: Bli medlem"
             type: text
+            width: 1/2
+          nav_member_url:
+            label: "Lenke: Bli medlem (valgfri)"
+            type: url
+            width: 1/2
   kontakt:
     label: Kontakt
     icon: phone
