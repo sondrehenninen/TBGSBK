@@ -20,12 +20,18 @@ tabs:
           - contact
           - arrangementer
           - sponsorer
+          - om-klubben
+          - apningstider
+          - bli-medlem
         status: all
         create:
           - default
           - contact
           - arrangementer
           - sponsorer
+          - om-klubben
+          - apningstider
+          - bli-medlem
   generell:
     label: Klubbinfo
     icon: text
@@ -161,7 +167,7 @@ tabs:
             type: url
   cta:
     label: CTA
-    icon: star
+    icon: cog
     sections:
       fields:
         type: fields

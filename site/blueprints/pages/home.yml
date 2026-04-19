@@ -6,23 +6,17 @@ options:
   delete: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
       content:
         type: fields
         fields:
-          settings_headline:
-            label: Sideinnstillinger
-            type: headline
           title:
             label: Tittel
             type: text
             required: true
-          hero_headline:
-            label: Hero section
-            type: headline
           hero_logo:
             label: Logo i hero
             type: files
@@ -47,9 +41,14 @@ tabs:
           hero_secondary_button_text:
             label: Tekst på sekundær knapp
             type: text
-          opening_headline:
-            label: Åpningstider section
-            type: headline
+
+  apningstider:
+    label: Åpningstider
+    icon: clock
+    sections:
+      content:
+        type: fields
+        fields:
           opening_icon:
             label: Ikon for seksjonen
             type: files
@@ -91,9 +90,14 @@ tabs:
           opening_button_text:
             label: Tekst på knapp
             type: text
-          events_headline:
-            label: Arrangementer section
-            type: headline
+
+  arrangementer:
+    label: Arrangementer
+    icon: calendar
+    sections:
+      content:
+        type: fields
+        fields:
           events_icon:
             label: Ikon for seksjonen
             type: files
@@ -114,9 +118,14 @@ tabs:
           events_button_text:
             label: Tekst på knapp
             type: text
-          about_headline:
-            label: Om klubben section
-            type: headline
+
+  om_klubben:
+    label: Om klubben
+    icon: text
+    sections:
+      content:
+        type: fields
+        fields:
           about_icon:
             label: Ikon for seksjonen
             type: files
@@ -148,9 +157,14 @@ tabs:
           about_button_text:
             label: Tekst på knapp
             type: text
-          support_headline:
-            label: Sponsorer section
-            type: headline
+
+  sponsorer:
+    label: Sponsorer
+    icon: tag
+    sections:
+      content:
+        type: fields
+        fields:
           support_icon:
             label: Ikon for seksjonen
             type: files
@@ -182,9 +196,14 @@ tabs:
           support_button_text:
             label: Tekst på knapp
             type: text
-          faq_headline:
-            label: FAQ section
-            type: headline
+
+  faq:
+    label: FAQ
+    icon: list
+    sections:
+      content:
+        type: fields
+        fields:
           faq_icon:
             label: Ikon for seksjonen
             type: files
@@ -216,9 +235,14 @@ tabs:
                 label: Svar
                 type: textarea
                 rows: 3
-          gallery_headline:
-            label: Galleri section
-            type: headline
+
+  galleri:
+    label: Galleri
+    icon: image
+    sections:
+      content:
+        type: fields
+        fields:
           gallery_icon:
             label: Ikon for seksjonen
             type: files
@@ -253,6 +277,7 @@ tabs:
           gallery_button_text:
             label: Tekst på knapp
             type: text
+
   seo:
     label: SEO
     icon: search
