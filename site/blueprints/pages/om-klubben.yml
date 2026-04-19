@@ -5,9 +5,9 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
       basic:
         type: fields
@@ -43,9 +43,13 @@ tabs:
             type: files
             max: 1
             layout: cards
+
+  hvem_vi_er:
+    label: Hvem vi er
+    icon: text
+    sections:
       intro:
         type: fields
-        headline: Hvem vi er
         fields:
           intro_icon:
             label: Seksjonsikon
@@ -74,9 +78,13 @@ tabs:
             label: Tekst ved siden av bildet
             type: textarea
             buttons: [bold, italic, link, ul]
+
+  miljo:
+    label: Miljøet vårt
+    icon: heart
+    sections:
       values:
         type: fields
-        headline: Miljøet vårt
         fields:
           values_label:
             label: Label
@@ -100,9 +108,13 @@ tabs:
                 label: Tekst
                 type: textarea
                 rows: 3
+
+  lokasjon:
+    label: Lokasjon
+    icon: pin
+    sections:
       location:
         type: fields
-        headline: Hvor vi holder til
         fields:
           location_icon:
             label: Seksjonsikon
@@ -141,9 +153,13 @@ tabs:
             label: Tekst ved siden av bildet
             type: textarea
             buttons: [bold, italic, link, ul]
+
+  prosjekter:
+    label: Prosjekter
+    icon: tag
+    sections:
       projects:
         type: fields
-        headline: Pågående prosjekter
         fields:
           projects_label:
             label: Label
@@ -185,9 +201,13 @@ tabs:
                 label: Tekst
                 type: textarea
                 rows: 4
+
+  team:
+    label: Team
+    icon: users
+    sections:
       team:
         type: fields
-        headline: Folkene bak
         fields:
           team_label:
             label: Label
@@ -215,31 +235,7 @@ tabs:
               email:
                 label: E-post
                 type: email
-      cta:
-        type: fields
-        headline: CTA section
-        fields:
-          cta_label:
-            label: Label
-            type: text
-          cta_title:
-            label: Tittel
-            type: text
-          cta_text:
-            label: Tekst
-            type: textarea
-            rows: 3
-          cta_secondary_button_text:
-            label: Sekundærknapp
-            type: text
-          cta_primary_button_text:
-            label: Primærknapp
-            type: text
-          cta_image:
-            label: CTA-bilde
-            type: files
-            max: 1
-            layout: cards
+
   seo:
     label: SEO
     icon: search
