@@ -38,7 +38,7 @@ tabs:
     label: Klubbinfo
     icon: text
     sections:
-      fields:
+      generell:
         type: fields
         fields:
           club_name:
@@ -109,7 +109,7 @@ tabs:
     label: Kontakt
     icon: phone
     sections:
-      fields:
+      kontakt:
         type: fields
         fields:
           epost:
@@ -148,7 +148,7 @@ tabs:
     label: CTA
     icon: cog
     sections:
-      fields:
+      cta:
         type: fields
         fields:
           cta_label:
