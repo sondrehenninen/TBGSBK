@@ -69,17 +69,6 @@ tabs:
                 label: Svar
                 type: textarea
                 rows: 3
-      cta:
-        type: fields
-        headline: CTA section
-        fields:
-          cta_title:
-            label: CTA-tittel
-            type: text
-          cta_text:
-            label: CTA-tekst
-            type: textarea
-            rows: 3
   bilder:
     label: Bilder
     icon: image
@@ -112,17 +101,6 @@ tabs:
         fields:
           secondary_image:
             label: Sekundært bilde
-            type: files
-            max: 1
-            layout: cards
-            uploads:
-              template: image
-      ctaImage:
-        type: fields
-        headline: CTA section
-        fields:
-          cta_image:
-            label: CTA-bilde
             type: files
             max: 1
             layout: cards

@@ -131,26 +131,6 @@ tabs:
           practical_secondary_button_text:
             label: Sekundærknapp
             type: text
-      cta:
-        type: fields
-        headline: CTA section
-        fields:
-          cta_label:
-            label: Label
-            type: text
-          cta_title:
-            label: Tittel
-            type: text
-          cta_text:
-            label: Tekst
-            type: textarea
-            rows: 3
-          cta_secondary_button_text:
-            label: Sekundærknapp
-            type: text
-          cta_primary_button_text:
-            label: Primærknapp
-            type: text
       arrangementer:
         label: Arrangementer
         type: pages

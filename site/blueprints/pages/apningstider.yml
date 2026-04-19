@@ -102,31 +102,6 @@ tabs:
             label: Kontakttekst
             type: textarea
             rows: 2
-      cta:
-        type: fields
-        headline: CTA section
-        fields:
-          cta_label:
-            label: Label
-            type: text
-          cta_title:
-            label: Tittel
-            type: text
-          cta_text:
-            label: Tekst
-            type: textarea
-            rows: 3
-          cta_secondary_button_text:
-            label: Sekundærknapp
-            type: text
-          cta_primary_button_text:
-            label: Primærknapp
-            type: text
-          cta_image:
-            label: CTA-bilde
-            type: files
-            max: 1
-            layout: cards
   seo:
     label: SEO
     icon: search

@@ -216,25 +216,6 @@ tabs:
                 label: Svar
                 type: textarea
                 rows: 3
-          cta_headline:
-            label: CTA section
-            type: headline
-          cta_label:
-            label: Liten seksjonslabel
-            type: text
-          cta_title:
-            label: CTA-tittel
-            type: text
-          cta_text:
-            label: CTA-tekst
-            type: textarea
-            rows: 3
-          cta_primary_button_text:
-            label: Tekst på hovedknapp
-            type: text
-          cta_secondary_button_text:
-            label: Tekst på sekundær knapp
-            type: text
           gallery_headline:
             label: Galleri section
             type: headline
