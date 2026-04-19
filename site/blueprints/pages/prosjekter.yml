@@ -1,0 +1,91 @@
+title: Prosjekter
+
+options:
+  changeTemplate: false
+  changeSlug: false
+
+tabs:
+  hero:
+    label: Hero
+    icon: bolt
+    sections:
+      hero:
+        type: fields
+        fields:
+          title:
+            label: Sidetittel
+            type: text
+            required: true
+          hero_icon:
+            label: Hero-ikon
+            type: files
+            max: 1
+            layout: cards
+          hero_title:
+            label: Hero-tittel
+            type: text
+          hero_intro:
+            label: Hero-ingress
+            type: textarea
+            rows: 3
+          hero_primary_button_text:
+            label: Primærknapp
+            type: text
+            width: 1/2
+          hero_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
+            width: 1/2
+          hero_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+            width: 1/2
+          hero_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
+            width: 1/2
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
+
+  prosjekter_liste:
+    label: Prosjekter
+    icon: layers
+    sections:
+      liste:
+        type: fields
+        fields:
+          list_label:
+            label: Label
+            type: text
+            width: 1/3
+          list_title:
+            label: Tittel
+            type: text
+            width: 2/3
+          list_intro:
+            label: Intro-tekst
+            type: textarea
+            rows: 3
+      prosjekter:
+        label: Prosjekter
+        type: pages
+        templates:
+          - prosjekt
+        create: prosjekt
+        sortBy: title asc
+
+  seo:
+    label: SEO
+    icon: search
+    sections:
+      meta:
+        type: fields
+        fields:
+          meta_description:
+            label: Meta-beskrivelse (SEO)
+            type: textarea
+            rows: 2
+            maxlength: 160
