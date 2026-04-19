@@ -38,9 +38,15 @@ tabs:
           hero_primary_button_text:
             label: Tekst på hovedknapp
             type: text
+          hero_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           hero_secondary_button_text:
             label: Tekst på sekundær knapp
             type: text
+          hero_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
 
   apningstider:
     label: Åpningstider
@@ -90,6 +96,9 @@ tabs:
           opening_button_text:
             label: Tekst på knapp
             type: text
+          opening_button_url:
+            label: Lenke (valgfri)
+            type: url
 
   arrangementer:
     label: Arrangementer
@@ -118,6 +127,9 @@ tabs:
           events_button_text:
             label: Tekst på knapp
             type: text
+          events_button_url:
+            label: Lenke (valgfri)
+            type: url
 
   om_klubben:
     label: Om klubben
@@ -157,6 +169,9 @@ tabs:
           about_button_text:
             label: Tekst på knapp
             type: text
+          about_button_url:
+            label: Lenke (valgfri)
+            type: url
 
   sponsorer:
     label: Sponsorer
@@ -196,6 +211,9 @@ tabs:
           support_button_text:
             label: Tekst på knapp
             type: text
+          support_button_url:
+            label: Lenke (valgfri)
+            type: url
 
   faq:
     label: FAQ
@@ -224,6 +242,9 @@ tabs:
           faq_button_text:
             label: Tekst på knapp
             type: text
+          faq_button_url:
+            label: Lenke (valgfri)
+            type: url
           faq:
             label: Vanlige spørsmål på forsiden
             type: structure
@@ -277,6 +298,9 @@ tabs:
           gallery_button_text:
             label: Tekst på knapp
             type: text
+          gallery_button_url:
+            label: Lenke (valgfri)
+            type: url
 
   seo:
     label: SEO

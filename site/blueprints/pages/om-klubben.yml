@@ -35,9 +35,15 @@ tabs:
           hero_primary_button_text:
             label: Primærknapp
             type: text
+          hero_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           hero_secondary_button_text:
             label: Sekundærknapp
             type: text
+          hero_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
           hero_image:
             label: Hero-bilde
             type: files
@@ -69,6 +75,9 @@ tabs:
           intro_button_text:
             label: Knappetekst
             type: text
+          intro_button_url:
+            label: Lenke (valgfri)
+            type: url
           primary_image:
             label: Hovedbilde
             type: files
@@ -141,9 +150,15 @@ tabs:
           location_primary_button_text:
             label: Primærknapp
             type: text
+          location_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           location_secondary_button_text:
             label: Sekundærknapp
             type: text
+          location_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
           secondary_image:
             label: Seksjonsbilde
             type: files
@@ -170,6 +185,9 @@ tabs:
           projects_button_text:
             label: Knappetekst
             type: text
+          projects_button_url:
+            label: Lenke (valgfri)
+            type: url
           projects:
             label: Prosjektkort
             type: structure

@@ -35,9 +35,15 @@ tabs:
           hero_primary_button_text:
             label: Primærknapp
             type: text
+          hero_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           hero_secondary_button_text:
             label: Sekundærknapp
             type: text
+          hero_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
       upcoming:
         type: fields
         headline: Kommende arrangementer
@@ -73,9 +79,15 @@ tabs:
           expectation_primary_button_text:
             label: Primærknapp
             type: text
+          expectation_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           expectation_secondary_button_text:
             label: Sekundærknapp
             type: text
+          expectation_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
       offers:
         type: fields
         headline: Faste tilbud
@@ -128,9 +140,15 @@ tabs:
           practical_primary_button_text:
             label: Primærknapp
             type: text
+          practical_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           practical_secondary_button_text:
             label: Sekundærknapp
             type: text
+          practical_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
       arrangementer:
         label: Arrangementer
         type: pages

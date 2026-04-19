@@ -185,9 +185,15 @@ tabs:
           cta_primary_button_text:
             label: Primærknapp
             type: text
+          cta_primary_button_url:
+            label: Lenke primærknapp (valgfri)
+            type: url
           cta_secondary_button_text:
             label: Sekundærknapp
             type: text
+          cta_secondary_button_url:
+            label: Lenke sekundærknapp (valgfri)
+            type: url
           cta_image:
             label: Bilde
             type: files
