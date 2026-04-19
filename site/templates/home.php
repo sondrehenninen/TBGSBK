@@ -218,8 +218,10 @@ $galleryImages = $page->gallery_images()->toFiles();
             <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
           </div>
           <div class="cta-panel__text">
-            <?php if ($site->cta_label()->isNotEmpty()): ?><p class="label"><?= $site->cta_label()->html() ?></p><?php endif ?>
-            <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
+            <div class="section-heading section-heading--stack">
+              <?php if ($site->cta_label()->isNotEmpty()): ?><p class="label"><?= $site->cta_label()->html() ?></p><?php endif ?>
+              <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
+            </div>
             <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
           </div>
         </div>
