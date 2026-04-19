@@ -16,6 +16,7 @@
         <div class="footer-nav">
           <h4>Informasjon</h4>
           <?php if ($medlem = page('bli-medlem')): ?><a href="<?= $medlem->url() ?>">Bli med</a><?php endif ?>
+          <?php if ($prosjekter = page('prosjekter')): ?><a href="<?= $prosjekter->url() ?>">Prosjekter</a><?php endif ?>
           <?php if ($kontakt = page('kontakt')): ?><a href="<?= $kontakt->url() ?>">Kontakt oss</a><?php endif ?>
           <?php if ($site->instagram_url()->isNotEmpty()): ?><a href="<?= $site->instagram_url()->escape() ?>">Instagram</a><?php endif ?>
           <?php if ($site->facebook_url()->isNotEmpty()): ?><a href="<?= $site->facebook_url()->escape() ?>">Facebook</a><?php endif ?>
