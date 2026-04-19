@@ -156,6 +156,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <?php if ($page->support_intro()->isNotEmpty()): ?><p><?= $page->support_intro()->html() ?></p><?php endif ?>
         <?php if ($page->support_secondary_text()->isNotEmpty()): ?><p><?= $page->support_secondary_text()->html() ?></p><?php endif ?>
         <?php $url = $page->support_button_url()->isNotEmpty() ? $page->support_button_url()->escape() : (($p = page('sponsorer')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->support_button_text()->or('Om sponsorer')->html() ?></a><?php endif ?>
+        <?php $url = $page->prosjekter_button_url()->isNotEmpty() ? $page->prosjekter_button_url()->escape() : (($p = page('prosjekter')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->prosjekter_button_text()->or('Se prosjekter')->html() ?></a><?php endif ?>
       </div>
     </div>
   </div>

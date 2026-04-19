@@ -234,6 +234,14 @@ tabs:
             label: Lenke (valgfri)
             type: url
             width: 1/2
+          prosjekter_button_text:
+            label: Tekst på prosjekter-knapp
+            type: text
+            width: 1/2
+          prosjekter_button_url:
+            label: Lenke til prosjekter (valgfri)
+            type: url
+            width: 1/2
 
   faq:
     label: FAQ
