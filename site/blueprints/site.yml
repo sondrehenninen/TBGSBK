@@ -159,3 +159,31 @@ tabs:
           facebook_url:
             label: Facebook
             type: url
+  cta:
+    label: CTA
+    icon: star
+    sections:
+      fields:
+        type: fields
+        fields:
+          cta_label:
+            label: Label (liten tekst over tittelen)
+            type: text
+          cta_title:
+            label: Tittel
+            type: text
+          cta_text:
+            label: Tekst
+            type: textarea
+            rows: 3
+          cta_primary_button_text:
+            label: Primærknapp
+            type: text
+          cta_secondary_button_text:
+            label: Sekundærknapp
+            type: text
+          cta_image:
+            label: Bilde
+            type: files
+            max: 1
+            layout: cards
