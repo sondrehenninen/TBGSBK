@@ -10,7 +10,7 @@ tabs:
     label: Hero
     icon: bolt
     sections:
-      content:
+      hero:
         type: fields
         fields:
           title:
@@ -46,7 +46,7 @@ tabs:
     label: Åpningstider
     icon: clock
     sections:
-      content:
+      apningstider:
         type: fields
         fields:
           opening_icon:
@@ -95,7 +95,7 @@ tabs:
     label: Arrangementer
     icon: calendar
     sections:
-      content:
+      arrangementer:
         type: fields
         fields:
           events_icon:
@@ -123,7 +123,7 @@ tabs:
     label: Om klubben
     icon: text
     sections:
-      content:
+      om_klubben:
         type: fields
         fields:
           about_icon:
@@ -162,7 +162,7 @@ tabs:
     label: Sponsorer
     icon: tag
     sections:
-      content:
+      sponsorer:
         type: fields
         fields:
           support_icon:
@@ -201,7 +201,7 @@ tabs:
     label: FAQ
     icon: list
     sections:
-      content:
+      faq:
         type: fields
         fields:
           faq_icon:
@@ -240,7 +240,7 @@ tabs:
     label: Galleri
     icon: image
     sections:
-      content:
+      galleri:
         type: fields
         fields:
           gallery_icon:
