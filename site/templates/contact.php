@@ -95,4 +95,6 @@ $heroImage = $page->hero_image()->toFile();
   </div>
 </section>
 
+<?php snippet('global-cta') ?>
+
 <?php snippet('footer') ?>

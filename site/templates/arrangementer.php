@@ -125,22 +125,6 @@ $practicalIcon = $page->practical_icon()->toFile();
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="cta-panel">
-      <div class="flow">
-        <div class="section-heading section-heading--stack">
-          <p class="label"><?= $site->cta_label()->or('Vil du bli med neste gang?')->html() ?></p>
-          <h2><?= $site->cta_title()->or('Bli medlem og få med deg det som skjer')->html() ?></h2>
-        </div>
-        <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
-      </div>
-      <div class="btn-group">
-        <?php $url = $site->cta_secondary_button_url()->isNotEmpty() ? $site->cta_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-        <?php $url = $site->cta_primary_button_url()->isNotEmpty() ? $site->cta_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-      </div>
-    </div>
-  </div>
-</section>
+<?php snippet('global-cta') ?>
 
 <?php snippet('footer') ?>
