@@ -35,15 +35,19 @@ tabs:
           hero_primary_button_text:
             label: Primærknapp
             type: text
+            width: 1/2
           hero_primary_button_url:
             label: Lenke primærknapp (valgfri)
             type: url
+            width: 1/2
           hero_secondary_button_text:
             label: Sekundærknapp
             type: text
+            width: 1/2
           hero_secondary_button_url:
             label: Lenke sekundærknapp (valgfri)
             type: url
+            width: 1/2
           hero_image:
             label: Hero-bilde
             type: files
@@ -65,9 +69,11 @@ tabs:
           intro_label:
             label: Label
             type: text
+            width: 1/3
           intro_title:
             label: Tittel
             type: text
+            width: 2/3
           intro_body:
             label: Venstre tekst
             type: textarea
@@ -75,9 +81,11 @@ tabs:
           intro_button_text:
             label: Knappetekst
             type: text
+            width: 1/2
           intro_button_url:
             label: Lenke (valgfri)
             type: url
+            width: 1/2
           primary_image:
             label: Hovedbilde
             type: files
@@ -98,9 +106,11 @@ tabs:
           values_label:
             label: Label
             type: text
+            width: 1/3
           values_title:
             label: Tittel
             type: text
+            width: 2/3
           values_items:
             label: Verdikort
             type: structure
@@ -133,9 +143,11 @@ tabs:
           location_label:
             label: Label
             type: text
+            width: 1/3
           location_title:
             label: Tittel
             type: text
+            width: 2/3
           location_body:
             label: Venstre tekst
             type: textarea
@@ -150,15 +162,19 @@ tabs:
           location_primary_button_text:
             label: Primærknapp
             type: text
+            width: 1/2
           location_primary_button_url:
             label: Lenke primærknapp (valgfri)
             type: url
+            width: 1/2
           location_secondary_button_text:
             label: Sekundærknapp
             type: text
+            width: 1/2
           location_secondary_button_url:
             label: Lenke sekundærknapp (valgfri)
             type: url
+            width: 1/2
           secondary_image:
             label: Seksjonsbilde
             type: files
@@ -179,15 +195,19 @@ tabs:
           projects_label:
             label: Label
             type: text
+            width: 1/3
           projects_title:
             label: Tittel
             type: text
+            width: 2/3
           projects_button_text:
             label: Knappetekst
             type: text
+            width: 1/2
           projects_button_url:
             label: Lenke (valgfri)
             type: url
+            width: 1/2
           projects:
             label: Prosjektkort
             type: structure
@@ -230,9 +250,11 @@ tabs:
           team_label:
             label: Label
             type: text
+            width: 1/3
           team_title:
             label: Tittel
             type: text
+            width: 2/3
           team_members:
             label: Team-medlemmer
             type: structure

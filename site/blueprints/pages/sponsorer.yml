@@ -35,15 +35,19 @@ tabs:
           hero_primary_button_text:
             label: Primærknapp
             type: text
+            width: 1/2
           hero_primary_button_url:
             label: Lenke primærknapp (valgfri)
             type: url
+            width: 1/2
           hero_secondary_button_text:
             label: Sekundærknapp
             type: text
+            width: 1/2
           hero_secondary_button_url:
             label: Lenke sekundærknapp (valgfri)
             type: url
+            width: 1/2
           hero_image:
             label: Hero-bilde
             type: files
@@ -56,9 +60,11 @@ tabs:
           sponsors_label:
             label: Label
             type: text
+            width: 1/3
           sponsors_title:
             label: Tittel
             type: text
+            width: 2/3
       support:
         type: fields
         headline: Støtte og prosjekter
@@ -66,9 +72,11 @@ tabs:
           support_label:
             label: Label
             type: text
+            width: 1/3
           support_title:
             label: Tittel
             type: text
+            width: 2/3
           support_text:
             label: Tekst om støtte og prosjekter
             type: textarea
