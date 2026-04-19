@@ -1,0 +1,70 @@
+Title: Fast innendørshall
+
+----
+
+Hero-title: Fast innendørshall i Messhall B
+
+----
+
+Hero-intro: Klubben arbeider med å sikre et fast innendørsanlegg for skating i Tønsberg-området.
+
+----
+
+Status-label: Status
+
+----
+
+Status-title: Hvor er vi i prosessen
+
+----
+
+Status-intro: Her ser du de viktigste milepælene frem mot et ferdig innendørsanlegg.
+
+----
+
+Milestones:
+
+- beskrivelse: Kartlegge egnede lokaler i Tønsberg
+  fullfort: "true"
+- beskrivelse: Dialog med Tønsberg kommune om støtte
+  fullfort: "true"
+- beskrivelse: Søke idrettsmidler / tilskudd
+  fullfort: "false"
+- beskrivelse: Signere leieavtale
+  fullfort: "false"
+- beskrivelse: Innredning og utstyr på plass
+  fullfort: "false"
+
+----
+
+Goal-label: Mål
+
+----
+
+Goal-title: Hva vi ønsker å oppnå
+
+----
+
+Goal-text:
+
+Målet er å skaffe et fast innendørsanlegg der medlemmer kan skate hele året, uavhengig av vær og sesong. Et stabilt anlegg gir bedre tilbud til ungdom, bedre treningsforhold og lavere terskel for nye skaters.
+
+----
+
+Cta-title: Vil du bidra til dette prosjektet?
+
+----
+
+Cta-text: Ta kontakt dersom du kan hjelpe med lokaler, økonomi eller kjenner noen vi bør prate med.
+
+----
+
+Cta-button-text: Ta kontakt
+
+----
+
+Meta-description: Les om klubbens arbeid med å skaffe fast innendørshall for skatere i Tønsberg.
+
+----
+
+Uuid: prosjekt01a

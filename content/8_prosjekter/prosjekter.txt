@@ -1,0 +1,25 @@
+Title: Prosjekter
+
+----
+
+Hero-title: Prosjekter vi jobber med
+
+----
+
+Hero-intro: Her finner du informasjon om pågående og planlagte prosjekter i klubben.
+
+----
+
+List-label: Pågående arbeid
+
+----
+
+List-title: Prosjekter
+
+----
+
+Meta-description: Se hva Tønsberg Skateboardklubb jobber med – fra hall og fasiliteter til arrangementer og samarbeid.
+
+----
+
+Uuid: prosjekter01
