@@ -118,15 +118,6 @@ tabs:
           telefon:
             label: Telefonnummer
             type: tel
-          indoor_location:
-            label: Innendørslokasjon
-            type: text
-          outdoor_location:
-            label: Utendørslokasjon
-            type: text
-          poststed:
-            label: Poststed
-            type: text
           season_notice:
             label: Sesongmelding
             type: textarea

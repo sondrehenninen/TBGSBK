@@ -113,6 +113,7 @@ $ctaImage = $site->cta_image()->toFile();
           <?php endforeach ?>
         </ul>
         <?php endif ?>
+        <?php if ($site->member_price()->isNotEmpty()): ?><p><strong><?= $site->member_price()->html() ?></strong></p><?php endif ?>
         <div class="btn-group">
           <?php $url = $page->practical_primary_button_url()->isNotEmpty() ? $page->practical_primary_button_url()->escape() : ($site->member_link()->isNotEmpty() ? $site->member_link()->escape() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->practical_primary_button_text()->or('Gå til MinIdrett')->html() ?></a><?php endif ?>
           <?php $url = $page->practical_secondary_button_url()->isNotEmpty() ? $page->practical_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->practical_secondary_button_text()->or('Still spørsmål først')->html() ?></a><?php endif ?>
