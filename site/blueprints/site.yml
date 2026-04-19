@@ -124,12 +124,6 @@ tabs:
           facebook_url:
             label: Facebook
             type: url
-          member_link:
-            label: Innmeldingslenke
-            type: url
-          member_price:
-            label: Medlemspris / info
-            type: text
           season_notice:
             label: Sesongmelding
             type: textarea
@@ -144,6 +138,19 @@ tabs:
               time:
                 label: Tid
                 type: text
+  medlemskap:
+    label: Medlemskap
+    icon: users
+    sections:
+      medlemskap:
+        type: fields
+        fields:
+          member_link:
+            label: Innmeldingslenke
+            type: url
+          member_price:
+            label: Medlemspris / info
+            type: text
   cta:
     label: CTA
     icon: cog
