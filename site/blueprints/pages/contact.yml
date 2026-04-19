@@ -5,21 +5,17 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
-      basic:
+      hero:
         type: fields
         fields:
           title:
             label: Sidetittel
             type: text
             required: true
-      hero:
-        type: fields
-        headline: Hero section
-        fields:
           hero_icon:
             label: Hero-ikon
             type: files
@@ -53,9 +49,13 @@ tabs:
             type: files
             max: 1
             layout: cards
-      contact:
+
+  kontaktpersoner:
+    label: Kontaktpersoner
+    icon: users
+    sections:
+      kontaktpersoner:
         type: fields
-        headline: Kontaktpersoner
         fields:
           people_label:
             label: Label
@@ -96,9 +96,13 @@ tabs:
               telefon:
                 label: Telefon
                 type: tel
-      formSection:
+
+  skjema:
+    label: Send melding
+    icon: email
+    sections:
+      skjema:
         type: fields
-        headline: Send melding
         fields:
           form_label:
             label: Label
@@ -124,9 +128,13 @@ tabs:
           form_submit_text:
             label: Knappetekst
             type: text
-      metaSection:
+
+  info:
+    label: Info
+    icon: text
+    sections:
+      info:
         type: fields
-        headline: Meta-info
         fields:
           social_label:
             label: Label for sosiale medier
@@ -142,6 +150,7 @@ tabs:
             label: Adressetekst
             type: textarea
             rows: 3
+
   seo:
     label: SEO
     icon: search

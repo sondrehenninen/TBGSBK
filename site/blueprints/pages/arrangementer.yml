@@ -5,21 +5,17 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
-      basic:
+      hero:
         type: fields
         fields:
           title:
             label: Sidetittel
             type: text
             required: true
-      hero:
-        type: fields
-        headline: Hero section
-        fields:
           hero_icon:
             label: Hero-ikon
             type: files
@@ -48,9 +44,13 @@ tabs:
             label: Lenke sekundærknapp (valgfri)
             type: url
             width: 1/2
-      upcoming:
+
+  arrangementer_liste:
+    label: Arrangementer
+    icon: calendar
+    sections:
+      liste:
         type: fields
-        headline: Kommende arrangementer
         fields:
           list_label:
             label: Label
@@ -63,9 +63,20 @@ tabs:
           list_link_text:
             label: Linktekst
             type: text
-      expectation:
+      arrangementer:
+        label: Arrangementer
+        type: pages
+        templates:
+          - arrangement
+        create: arrangement
+        sortBy: start_date asc
+
+  forventning:
+    label: Hva du kan forvente
+    icon: text
+    sections:
+      forventning:
         type: fields
-        headline: Hva du kan forvente
         fields:
           expectation_icon:
             label: Seksjonsikon
@@ -100,9 +111,13 @@ tabs:
             label: Lenke sekundærknapp (valgfri)
             type: url
             width: 1/2
-      offers:
+
+  tilbud:
+    label: Faste tilbud
+    icon: tag
+    sections:
+      tilbud:
         type: fields
-        headline: Faste tilbud
         fields:
           offers_label:
             label: Label
@@ -129,9 +144,13 @@ tabs:
               meta:
                 label: Metatekst
                 type: text
-      practical:
+
+  praktisk:
+    label: Praktisk info
+    icon: cog
+    sections:
+      praktisk:
         type: fields
-        headline: Praktisk info
         fields:
           practical_icon:
             label: Seksjonsikon
@@ -169,13 +188,7 @@ tabs:
             label: Lenke sekundærknapp (valgfri)
             type: url
             width: 1/2
-      arrangementer:
-        label: Arrangementer
-        type: pages
-        templates:
-          - arrangement
-        create: arrangement
-        sortBy: start_date asc
+
   seo:
     label: SEO
     icon: search

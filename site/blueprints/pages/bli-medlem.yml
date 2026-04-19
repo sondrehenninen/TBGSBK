@@ -5,21 +5,17 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
-      basic:
+      hero:
         type: fields
         fields:
           title:
             label: Sidetittel
             type: text
             required: true
-      hero:
-        type: fields
-        headline: Hero section
-        fields:
           hero_icon:
             label: Hero-ikon
             type: files
@@ -53,9 +49,13 @@ tabs:
             type: files
             max: 1
             layout: cards
+
+  intro:
+    label: Hvorfor bli med
+    icon: heart
+    sections:
       intro:
         type: fields
-        headline: Hvorfor bli med
         fields:
           intro_icon:
             label: Seksjonsikon
@@ -79,9 +79,13 @@ tabs:
             type: files
             max: 1
             layout: cards
-      benefits:
+
+  fordeler:
+    label: Fordeler
+    icon: list
+    sections:
+      fordeler:
         type: fields
-        headline: Fordeler
         fields:
           benefits_label:
             label: Label
@@ -105,9 +109,13 @@ tabs:
                 label: Tekst
                 type: textarea
                 rows: 3
-      steps:
+
+  steg:
+    label: Slik fungerer det
+    icon: cog
+    sections:
+      steg:
         type: fields
-        headline: Slik fungerer det
         fields:
           steps_label:
             label: Label
@@ -131,9 +139,13 @@ tabs:
                 label: Tekst
                 type: textarea
                 rows: 3
-      practical:
+
+  praktisk:
+    label: Praktisk info
+    icon: tag
+    sections:
+      praktisk:
         type: fields
-        headline: Praktisk info
         fields:
           practical_icon:
             label: Seksjonsikon
@@ -176,9 +188,13 @@ tabs:
             type: files
             max: 1
             layout: cards
-      faqSection:
+
+  faq:
+    label: FAQ
+    icon: search
+    sections:
+      faq:
         type: fields
-        headline: FAQ section
         fields:
           faq_icon:
             label: Seksjonsikon
@@ -208,6 +224,7 @@ tabs:
                 label: Svar
                 type: textarea
                 rows: 3
+
   seo:
     label: SEO
     icon: search

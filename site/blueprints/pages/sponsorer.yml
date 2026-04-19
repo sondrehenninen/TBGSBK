@@ -5,21 +5,17 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
-      basic:
+      hero:
         type: fields
         fields:
           title:
             label: Sidetittel
             type: text
             required: true
-      hero:
-        type: fields
-        headline: Hero section
-        fields:
           hero_icon:
             label: Hero-ikon
             type: files
@@ -53,9 +49,13 @@ tabs:
             type: files
             max: 1
             layout: cards
-      sponsorSection:
+
+  sponsorliste:
+    label: Sponsorer
+    icon: users
+    sections:
+      sponsorinfo:
         type: fields
-        headline: Sponsorliste
         fields:
           sponsors_label:
             label: Label
@@ -65,9 +65,20 @@ tabs:
             label: Tittel
             type: text
             width: 2/3
-      support:
+      sponsorer:
+        label: Sponsorer
+        type: pages
+        templates:
+          - sponsor
+        create: sponsor
+        sortBy: title asc
+
+  stotte:
+    label: Støtte og prosjekter
+    icon: tag
+    sections:
+      stotte:
         type: fields
-        headline: Støtte og prosjekter
         fields:
           support_label:
             label: Label
@@ -84,13 +95,7 @@ tabs:
           support_link_text:
             label: Linktekst
             type: text
-      sponsorer:
-        label: Sponsorer
-        type: pages
-        templates:
-          - sponsor
-        create: sponsor
-        sortBy: title asc
+
   seo:
     label: SEO
     icon: search

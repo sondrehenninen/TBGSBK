@@ -5,21 +5,17 @@ options:
   changeSlug: false
 
 tabs:
-  innhold:
-    label: Innhold
-    icon: text
+  hero:
+    label: Hero
+    icon: bolt
     sections:
-      basic:
+      hero:
         type: fields
         fields:
           title:
             label: Sidetittel
             type: text
             required: true
-      hero:
-        type: fields
-        headline: Hero section
-        fields:
           hero_icon:
             label: Hero-ikon
             type: files
@@ -53,9 +49,13 @@ tabs:
             type: files
             max: 1
             layout: cards
-      season:
+
+  sesong:
+    label: Sesongstatus
+    icon: clock
+    sections:
+      sesong:
         type: fields
-        headline: Sesongstatus
         fields:
           season_label:
             label: Label
@@ -83,9 +83,13 @@ tabs:
             label: Tekst under listen
             type: textarea
             rows: 2
-      location:
+
+  lokasjon:
+    label: Finn oss
+    icon: pin
+    sections:
+      lokasjon:
         type: fields
-        headline: Finn oss
         fields:
           location_label:
             label: Label
@@ -116,6 +120,7 @@ tabs:
             label: Kontakttekst
             type: textarea
             rows: 2
+
   seo:
     label: SEO
     icon: search
