@@ -2,7 +2,7 @@
 $sponsors = $page->children()->listed()->sortBy('title', 'asc');
 $heroIcon = $page->hero_icon()->toFile();
 $heroImage = $page->hero_image()->toFile();
-$ctaImage = $page->cta_image()->toFile();
+$ctaImage = $site->cta_image()->toFile();
 ?>
 <?php snippet('header') ?>
 
@@ -68,7 +68,7 @@ $ctaImage = $page->cta_image()->toFile();
 </section>
 <?php endif ?>
 
-<?php if ($page->cta_title()->isNotEmpty() || $page->cta_text()->isNotEmpty()): ?>
+<?php if ($site->cta_title()->isNotEmpty() || $site->cta_text()->isNotEmpty()): ?>
 <hr class="section-rule" />
 <section class="section">
   <div class="container">
@@ -83,15 +83,15 @@ $ctaImage = $page->cta_image()->toFile();
           </div>
           <div class="cta-panel__text">
             <div class="section-heading section-heading--stack">
-              <?php if ($page->cta_label()->isNotEmpty()): ?><p class="label"><?= $page->cta_label()->html() ?></p><?php endif ?>
-              <?php if ($page->cta_title()->isNotEmpty()): ?><h2><?= $page->cta_title()->html() ?></h2><?php endif ?>
+              <?php if ($site->cta_label()->isNotEmpty()): ?><p class="label"><?= $site->cta_label()->html() ?></p><?php endif ?>
+              <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
             </div>
-            <?php if ($page->cta_text()->isNotEmpty()): ?><p><?= $page->cta_text()->html() ?></p><?php endif ?>
+            <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-light" href="<?= $medlem->url() ?>"><?= $page->cta_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $page->cta_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
+          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-light" href="<?= $medlem->url() ?>"><?= $site->cta_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $site->cta_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>

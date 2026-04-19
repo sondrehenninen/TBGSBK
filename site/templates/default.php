@@ -2,7 +2,7 @@
 $heroImage = $page->hero_image()->toFile();
 $primaryImage = $page->primary_image()->toFile();
 $secondaryImage = $page->secondary_image()->toFile();
-$ctaImage = $page->cta_image()->toFile();
+$ctaImage = $site->cta_image()->toFile();
 ?>
 <?php snippet('header') ?>
 
@@ -211,8 +211,8 @@ $ctaImage = $page->cta_image()->toFile();
             <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
           </div>
           <div class="cta-panel__text">
-            <?php if ($page->cta_title()->isNotEmpty()): ?><h2><?= $page->cta_title()->html() ?></h2><?php endif ?>
-            <?php if ($page->cta_text()->isNotEmpty()): ?><p><?= $page->cta_text()->html() ?></p><?php endif ?>
+            <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
+            <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
@@ -351,8 +351,8 @@ $ctaImage = $page->cta_image()->toFile();
             <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
           </div>
           <div class="cta-panel__text">
-            <?php if ($page->cta_title()->isNotEmpty()): ?><h2><?= $page->cta_title()->html() ?></h2><?php endif ?>
-            <?php if ($page->cta_text()->isNotEmpty()): ?><p><?= $page->cta_text()->html() ?></p><?php endif ?>
+            <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
+            <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
           </div>
         </div>
         <div class="btn-group cta-panel__actions">

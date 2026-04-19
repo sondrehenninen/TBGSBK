@@ -130,14 +130,14 @@ $practicalIcon = $page->practical_icon()->toFile();
     <div class="cta-panel">
       <div class="flow">
         <div class="section-heading section-heading--stack">
-          <p class="label"><?= $page->cta_label()->or('Vil du bli med neste gang?')->html() ?></p>
-          <h2><?= $page->cta_title()->or('Bli medlem og få med deg det som skjer')->html() ?></h2>
+          <p class="label"><?= $site->cta_label()->or('Vil du bli med neste gang?')->html() ?></p>
+          <h2><?= $site->cta_title()->or('Bli medlem og få med deg det som skjer')->html() ?></h2>
         </div>
-        <?php if ($page->cta_text()->isNotEmpty()): ?><p><?= $page->cta_text()->html() ?></p><?php endif ?>
+        <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
       </div>
       <div class="btn-group">
-        <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $page->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-        <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $page->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+        <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+        <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
       </div>
     </div>
   </div>

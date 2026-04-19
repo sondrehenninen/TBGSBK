@@ -6,7 +6,7 @@ $primaryImage = $page->primary_image()->toFile();
 $practicalIcon = $page->practical_icon()->toFile();
 $secondaryImage = $page->secondary_image()->toFile();
 $faqIcon = $page->faq_icon()->toFile();
-$ctaImage = $page->cta_image()->toFile();
+$ctaImage = $site->cta_image()->toFile();
 ?>
 <?php snippet('header') ?>
 
@@ -158,15 +158,15 @@ $ctaImage = $page->cta_image()->toFile();
           </div>
           <div class="cta-panel__text">
             <div class="section-heading section-heading--stack">
-              <?php if ($page->cta_label()->isNotEmpty()): ?><p class="label"><?= $page->cta_label()->html() ?></p><?php endif ?>
-              <h2><?= $page->cta_title()->or('Innmelding skjer trygt via MinIdrett')->html() ?></h2>
+              <?php if ($site->cta_label()->isNotEmpty()): ?><p class="label"><?= $site->cta_label()->html() ?></p><?php endif ?>
+              <h2><?= $site->cta_title()->or('Innmelding skjer trygt via MinIdrett')->html() ?></h2>
             </div>
-            <?php if ($page->cta_text()->isNotEmpty()): ?><p><?= $page->cta_text()->html() ?></p><?php endif ?>
+            <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $page->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-          <?php if ($site->member_link()->isNotEmpty()): ?><a class="btn" href="<?= $site->member_link()->escape() ?>"><?= $page->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php if ($site->member_link()->isNotEmpty()): ?><a class="btn" href="<?= $site->member_link()->escape() ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
