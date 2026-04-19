@@ -29,8 +29,8 @@ $practicalIcon = $page->practical_icon()->toFile();
       <div class="subpage-hero__copy">
         <?php if ($page->intro()->isNotEmpty()): ?><p><?= $page->intro()->html() ?></p><?php endif ?>
         <div class="btn-group">
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_primary_button_url()->isNotEmpty() ? $page->hero_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ $practicalIcon = $page->practical_icon()->toFile();
         <p class="label"><?= $page->list_label()->or('Neste på programmet')->html() ?></p>
         <h2><?= $page->list_title()->or('Kommende arrangementer')->html() ?></h2>
       </div>
-      <?php if ($kontakt = page('kontakt')): ?><a class="cta-link" href="<?= $kontakt->url() ?>"><?= $page->list_link_text()->or('Kontakt oss om arrangementer')->html() ?></a><?php endif ?>
+      <?php $url = $page->list_link_url()->isNotEmpty() ? $page->list_link_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="cta-link" href="<?= $url ?>"><?= $page->list_link_text()->or('Kontakt oss om arrangementer')->html() ?></a><?php endif ?>
     </div>
     <div class="event-list">
       <?php foreach ($events as $event): ?>
@@ -75,8 +75,8 @@ $practicalIcon = $page->practical_icon()->toFile();
         </div>
         <?= $page->expectation_body()->kt() ?>
         <div class="btn-group">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $page->expectation_primary_button_text()->or('Spør oss først')->html() ?></a><?php endif ?>
-          <?php if ($apning = page('apningstider')): ?><a class="btn btn--secondary-dark" href="<?= $apning->url() ?>"><?= $page->expectation_secondary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
+          <?php $url = $page->expectation_primary_button_url()->isNotEmpty() ? $page->expectation_primary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->expectation_primary_button_text()->or('Spør oss først')->html() ?></a><?php endif ?>
+          <?php $url = $page->expectation_secondary_button_url()->isNotEmpty() ? $page->expectation_secondary_button_url()->escape() : (($p = page('apningstider')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->expectation_secondary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -117,8 +117,8 @@ $practicalIcon = $page->practical_icon()->toFile();
           <?php endforeach ?>
         </ul>
         <div class="btn-group">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $page->practical_primary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-dark" href="<?= $medlem->url() ?>"><?= $page->practical_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->practical_primary_button_url()->isNotEmpty() ? $page->practical_primary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->practical_primary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $page->practical_secondary_button_url()->isNotEmpty() ? $page->practical_secondary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->practical_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -136,8 +136,8 @@ $practicalIcon = $page->practical_icon()->toFile();
         <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
       </div>
       <div class="btn-group">
-        <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-        <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+        <?php $url = $site->cta_secondary_button_url()->isNotEmpty() ? $site->cta_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+        <?php $url = $site->cta_primary_button_url()->isNotEmpty() ? $site->cta_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
       </div>
     </div>
   </div>

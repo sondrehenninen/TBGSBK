@@ -36,8 +36,8 @@ $galleryImages = $page->gallery_images()->toFiles();
       <div class="hero-text-wrap">
         <?php if ($page->hero_intro()->isNotEmpty()): ?><p><?= $page->hero_intro()->html() ?></p><?php endif ?>
         <div class="btn-group">
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_primary_button_url()->isNotEmpty() ? $page->hero_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <p class="label"><?= $page->opening_label()->or('Åpningstider')->html() ?></p>
         <h2><?= $page->opening_title()->or('Messehall B')->html() ?></h2>
         <?php if ($page->opening_intro()->isNotEmpty()): ?><p><?= $page->opening_intro()->html() ?></p><?php endif ?>
-        <?php if ($apning = page('apningstider')): ?><a class="cta-link" href="<?= $apning->url() ?>">→ <?= $page->opening_button_text()->or('Les mer om åpningstider')->html() ?></a><?php endif ?>
+        <?php $url = $page->opening_button_url()->isNotEmpty() ? $page->opening_button_url()->escape() : (($p = page('apningstider')) ? $p->url() : ''); if ($url): ?><a class="cta-link" href="<?= $url ?>">→ <?= $page->opening_button_text()->or('Les mer om åpningstider')->html() ?></a><?php endif ?>
       </div>
     </div>
     <div>
@@ -80,7 +80,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <p class="label"><?= $page->events_label()->or('Arrangementer')->html() ?></p>
         <h2><?= $page->events_title()->or('Hold deg oppdatert på hva som skjer')->html() ?></h2>
         <p><?= $page->events_intro()->or('Vi har ukentlige økter og arrangementer gjennom hele året.')->html() ?></p>
-        <a class="cta-link" href="<?= page('arrangementer')->url() ?>">→ <?= $page->events_button_text()->or('Se alle arrangementer')->html() ?></a>
+        <a class="cta-link" href="<?= $page->events_button_url()->isNotEmpty() ? $page->events_button_url()->escape() : page('arrangementer')->url() ?>">→ <?= $page->events_button_text()->or('Se alle arrangementer')->html() ?></a>
       </div>
     </div>
     <div class="event-list">
@@ -113,7 +113,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <h2><?= $page->about_title()->or('Dette er TBGSBK')->html() ?></h2>
         <?php if ($page->about_intro()->isNotEmpty()): ?><p><?= $page->about_intro()->html() ?></p><?php endif ?>
         <?php if ($page->about_secondary_text()->isNotEmpty()): ?><p><?= $page->about_secondary_text()->html() ?></p><?php endif ?>
-        <?php if ($om = page('om-klubben')): ?><a class="btn btn--secondary-dark" href="<?= $om->url() ?>">→ <?= $page->about_button_text()->or('Om klubben')->html() ?></a><?php endif ?>
+        <?php $url = $page->about_button_url()->isNotEmpty() ? $page->about_button_url()->escape() : (($p = page('om-klubben')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->about_button_text()->or('Om klubben')->html() ?></a><?php endif ?>
       </div>
     </div>
   </div>
@@ -128,7 +128,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <p class="label"><?= $page->faq_label()->or('FAQ')->html() ?></p>
         <h2><?= $page->faq_title()->or('Lurer du på noe?')->html() ?></h2>
         <?php if ($page->faq_intro()->isNotEmpty()): ?><p><?= $page->faq_intro()->html() ?></p><?php endif ?>
-        <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-dark" href="<?= $kontakt->url() ?>">→ <?= $page->faq_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+        <?php $url = $page->faq_button_url()->isNotEmpty() ? $page->faq_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->faq_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
       </div>
     </div>
     <div class="faq-list">
@@ -155,7 +155,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <h2><?= $page->support_title()->or('Prosjekter og støtte')->html() ?></h2>
         <?php if ($page->support_intro()->isNotEmpty()): ?><p><?= $page->support_intro()->html() ?></p><?php endif ?>
         <?php if ($page->support_secondary_text()->isNotEmpty()): ?><p><?= $page->support_secondary_text()->html() ?></p><?php endif ?>
-        <?php if ($sponsorerPage = page('sponsorer')): ?><a class="btn btn--secondary-dark" href="<?= $sponsorerPage->url() ?>">→ <?= $page->support_button_text()->or('Om sponsorer')->html() ?></a><?php endif ?>
+        <?php $url = $page->support_button_url()->isNotEmpty() ? $page->support_button_url()->escape() : (($p = page('sponsorer')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->support_button_text()->or('Om sponsorer')->html() ?></a><?php endif ?>
       </div>
     </div>
   </div>
@@ -183,7 +183,7 @@ $galleryImages = $page->gallery_images()->toFiles();
         <div class="section-heading--split">
           <h2><?= $page->gallery_title()->or('Øyeblikk fra miljøet')->html() ?></h2>
           <?php if ($page->gallery_intro()->isNotEmpty()): ?><p><?= $page->gallery_intro()->html() ?></p><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-dark" href="<?= $kontakt->url() ?>">→ <?= $page->gallery_button_text()->or('Kontakt klubben')->html() ?></a><?php endif ?>
+          <?php $url = $page->gallery_button_url()->isNotEmpty() ? $page->gallery_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->gallery_button_text()->or('Kontakt klubben')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -223,8 +223,8 @@ $galleryImages = $page->gallery_images()->toFiles();
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_secondary_button_url()->isNotEmpty() ? $site->cta_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_primary_button_url()->isNotEmpty() ? $site->cta_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>

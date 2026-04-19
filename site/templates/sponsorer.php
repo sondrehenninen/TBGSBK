@@ -25,8 +25,8 @@ $ctaImage = $site->cta_image()->toFile();
       <div class="subpage-hero__copy">
         <?php if ($page->intro()->isNotEmpty()): ?><p><?= $page->intro()->html() ?></p><?php endif ?>
         <div class="btn-group">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $page->hero_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-light" href="<?= $medlem->url() ?>"><?= $page->hero_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_primary_button_url()->isNotEmpty() ? $page->hero_primary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->hero_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ $ctaImage = $site->cta_image()->toFile();
     </div>
     <div class="flow">
       <?= $page->support_text()->kt() ?>
-      <?php if ($kontakt = page('kontakt')): ?><a class="cta-link" href="<?= $kontakt->url() ?>">→ <?= $page->support_link_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+      <?php $url = $page->support_link_url()->isNotEmpty() ? $page->support_link_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="cta-link" href="<?= $url ?>">→ <?= $page->support_link_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
     </div>
   </div>
 </section>
@@ -90,8 +90,8 @@ $ctaImage = $site->cta_image()->toFile();
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-light" href="<?= $medlem->url() ?>"><?= $site->cta_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn" href="<?= $kontakt->url() ?>"><?= $site->cta_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_secondary_button_url()->isNotEmpty() ? $site->cta_secondary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $site->cta_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_primary_button_url()->isNotEmpty() ? $site->cta_primary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $site->cta_primary_button_text()->or('Ta kontakt')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>

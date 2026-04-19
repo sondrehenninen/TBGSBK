@@ -23,8 +23,8 @@ $heroImage = $page->hero_image()->toFile();
       <div class="subpage-hero__copy">
         <?php if ($page->hero_ingress()->isNotEmpty()): ?><p><?= $page->hero_ingress()->html() ?></p><?php endif ?>
         <div class="btn-group">
-          <?php if ($site->epost()->isNotEmpty()): ?><a class="btn" href="mailto:<?= $site->epost()->escape() ?>"><?= $page->hero_primary_button_text()->or('Send e-post')->html() ?></a><?php endif ?>
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn btn--secondary-light" href="<?= $medlem->url() ?>"><?= $page->hero_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_primary_button_url()->isNotEmpty() ? $page->hero_primary_button_url()->escape() : ($site->epost()->isNotEmpty() ? 'mailto:' . $site->epost()->escape() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->hero_primary_button_text()->or('Send e-post')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>

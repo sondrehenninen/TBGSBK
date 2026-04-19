@@ -28,8 +28,8 @@ $ctaImage = $site->cta_image()->toFile();
       <div class="subpage-hero__copy">
         <?php if ($page->hero_intro()->isNotEmpty()): ?><p><?= $page->hero_intro()->html() ?></p><?php endif ?>
         <div class="btn-group">
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_primary_button_url()->isNotEmpty() ? $page->hero_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->hero_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@ $ctaImage = $site->cta_image()->toFile();
           <h2><?= $page->intro_title()->or('Frivillig drevet og rotfestet i Tønsberg')->html() ?></h2>
         </div>
         <?= $page->intro_body()->kt() ?>
-        <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-dark" href="<?= $kontakt->url() ?>"><?= $page->intro_button_text()->or('Kontakt klubben')->html() ?></a><?php endif ?>
+        <?php $url = $page->intro_button_url()->isNotEmpty() ? $page->intro_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->intro_button_text()->or('Kontakt klubben')->html() ?></a><?php endif ?>
       </div>
     </div>
     <div class="about-story">
@@ -99,8 +99,8 @@ $ctaImage = $site->cta_image()->toFile();
         </ul>
         <?php endif ?>
         <div class="btn-group">
-          <?php if ($apning = page('apningstider')): ?><a class="btn" href="<?= $apning->url() ?>"><?= $page->location_primary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-dark" href="<?= $kontakt->url() ?>"><?= $page->location_secondary_button_text()->or('Spør oss')->html() ?></a><?php endif ?>
+          <?php $url = $page->location_primary_button_url()->isNotEmpty() ? $page->location_primary_button_url()->escape() : (($p = page('apningstider')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->location_primary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
+          <?php $url = $page->location_secondary_button_url()->isNotEmpty() ? $page->location_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->location_secondary_button_text()->or('Spør oss')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
@@ -122,7 +122,7 @@ $ctaImage = $site->cta_image()->toFile();
         <?php if ($page->projects_label()->isNotEmpty()): ?><p class="label"><?= $page->projects_label()->html() ?></p><?php endif ?>
         <h2><?= $page->projects_title()->or('Det vi jobber med nå')->html() ?></h2>
       </div>
-      <?php if ($sponsorer = page('sponsorer')): ?><a class="btn btn--secondary-dark" href="<?= $sponsorer->url() ?>"><?= $page->projects_button_text()->or('Se støtte og samarbeid')->html() ?></a><?php endif ?>
+      <?php $url = $page->projects_button_url()->isNotEmpty() ? $page->projects_button_url()->escape() : (($p = page('sponsorer')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->projects_button_text()->or('Se støtte og samarbeid')->html() ?></a><?php endif ?>
     </div>
     <div class="project-grid">
       <?php foreach ($page->projects()->toStructure() as $project): ?>
@@ -193,8 +193,8 @@ $ctaImage = $site->cta_image()->toFile();
           </div>
         </div>
         <div class="btn-group cta-panel__actions">
-          <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-light" href="<?= $kontakt->url() ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
-          <?php if ($medlem = page('bli-medlem')): ?><a class="btn" href="<?= $medlem->url() ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_secondary_button_url()->isNotEmpty() ? $site->cta_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $site->cta_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
+          <?php $url = $site->cta_primary_button_url()->isNotEmpty() ? $site->cta_primary_button_url()->escape() : (($p = page('bli-medlem')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $site->cta_primary_button_text()->or('Bli medlem')->html() ?></a><?php endif ?>
         </div>
       </div>
     </div>
