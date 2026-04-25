@@ -136,7 +136,8 @@
 
 .hero {
   position: relative;
-  min-height: min(893px, 86vh);
+  min-height: min(720px, 80vh);
+  max-height: 80vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -180,7 +181,7 @@
 }
 
 .hero-logo-wrap {
-  width: clamp(220px, 28vw, 427px);
+  width: clamp(120px, 16vw, 220px);
 }
 
 .hero-logo-wrap img {
