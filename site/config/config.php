@@ -1,5 +1,3 @@
 <?php
 
-return [
-    'panel.install' => true,
-];
+return [];
