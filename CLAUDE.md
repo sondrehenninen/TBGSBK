@@ -12,6 +12,16 @@ Panel: `http://localhost:8001/panel`
 
 After changing blueprints, restart the server AND hard-refresh the Panel (Cmd+Shift+R) — Kirby caches blueprint output in `site/cache/` and the Panel caches tab state in JS. If tabs still show wrong content, delete `site/cache/localhost_8001/*`.
 
+## Deploy
+
+```bash
+git add <files> && git commit -m "message" && git push origin main
+ssh -i ~/.ssh/tbgsbk_deploy tonsbergskateboa@login.domeneshop.no \
+  "cd /home/6/t/tonsbergskateboa/www/tonsbergskateboardklubb.no && git pull"
+```
+
+Server: `login.domeneshop.no`, user `tonsbergskateboa`, web root `/home/6/t/tonsbergskateboa/www/tonsbergskateboardklubb.no`. See `DEPLOY.md` for full setup notes.
+
 ## Architecture
 
 Kirby 5.3.3 file-based CMS. No database, no build step, no Node.
@@ -28,6 +38,10 @@ Kirby 5.3.3 file-based CMS. No database, no build step, no Node.
 - `global-cta.php` — the shared CTA panel used on every page (edit once, updates everywhere)
 
 **CSS** (`assets/css/`): five files loaded in order — `tokens.css` (design tokens / CSS variables), `base.css`, `layout.css`, `components.css`, `pages.css`. No preprocessor.
+
+**JS** (`assets/js/`): `navigation.js` handles the mobile nav toggle (`.nav-toggle` button ↔ `.site-nav.is-open`). `main.js` for any other interactions. Both loaded with `defer` in `footer.php`.
+
+**Config** (`site/config/config.php`): Kirby config. Currently empty (`return []`). Do not add `'panel.install' => true` on a live server.
 
 ## Key patterns
 
@@ -47,3 +61,7 @@ Kirby 5.3.3 file-based CMS. No database, no build step, no Node.
 **Structure fields** — rendered with `->toStructure()` before looping. Toggle fields checked with `->isTrue()`.
 
 **Kirbytext** — use `->kt()` for textarea fields that support bold/italic/link/ul buttons. Use `->html()` for plain text fields.
+
+**Footer links are hardcoded** in `site/snippets/footer.php` using `page('slug')` lookups — they are not blueprint-driven. Add new footer links there directly.
+
+**Subpage pattern** — `sponsorer`/`sponsor` follows the same list+subpage pattern as `arrangementer`/`arrangement` and `prosjekter`/`prosjekt`.

@@ -8,6 +8,16 @@ fields:
     label: Tittel
     type: text
     required: true
+  hero_icon:
+    label: Hero-ikon
+    type: files
+    max: 1
+    layout: cards
+  hero_image:
+    label: Hero-bilde
+    type: files
+    max: 1
+    layout: cards
   tag:
     label: Tag
     type: text

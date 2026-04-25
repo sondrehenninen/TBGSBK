@@ -56,11 +56,18 @@
 /* ── Navigasjon ── */
 
 .site-header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
   background: var(--color-header-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
 }
 
 .header-inner {
@@ -137,7 +144,6 @@
 .hero {
   position: relative;
   min-height: min(720px, 80vh);
-  max-height: 80vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -170,7 +176,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: var(--space-9) 0;
+  padding: var(--space-8) 0;
 }
 
 .hero-inner {
@@ -580,12 +586,20 @@
     height: 30px;
   }
 
+  .section {
+    padding: var(--space-7) 0;
+  }
+
+  .section--compact {
+    padding: var(--space-5) 0;
+  }
+
   .hero {
     min-height: auto;
   }
 
   .hero-content {
-    padding: var(--space-8) 0;
+    padding: var(--space-7) 0;
   }
 
   .split-layout {

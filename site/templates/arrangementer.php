@@ -5,12 +5,13 @@ $events = $page->children()->listed()->filter(function ($event) {
   return $end >= strtotime('today');
 })->sortBy('start_date', 'asc');
 $heroIcon = $page->hero_icon()->toFile();
+$heroImage = $page->hero_image()->toFile();
 $expectationIcon = $page->expectation_icon()->toFile();
 $practicalIcon = $page->practical_icon()->toFile();
 ?>
 <?php snippet('header') ?>
 
-<section class="subpage-hero subpage-hero--text-only">
+<section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
       <div class="subpage-hero__mark">
@@ -33,6 +34,9 @@ $practicalIcon = $page->practical_icon()->toFile();
           <?php $url = $page->hero_secondary_button_url()->isNotEmpty() ? $page->hero_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-light" href="<?= $url ?>"><?= $page->hero_secondary_button_text()->or('Kontakt oss')->html() ?></a><?php endif ?>
         </div>
       </div>
+    </div>
+    <div class="subpage-hero__media">
+      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7565.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Arrangementer i Tønsberg Skateboardklubb')->esc() : 'Arrangementer i Tønsberg Skateboardklubb' ?>">
     </div>
   </div>
 </section>

@@ -21,6 +21,11 @@ tabs:
             type: files
             max: 1
             layout: cards
+          hero_image:
+            label: Hero-bilde
+            type: files
+            max: 1
+            layout: cards
           hero_title:
             label: Hero-tittel
             type: text
