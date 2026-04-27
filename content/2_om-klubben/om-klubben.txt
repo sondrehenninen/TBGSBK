@@ -2,7 +2,7 @@ Title: Om klubben
 
 ----
 
-Meta-description: Lær mer om Tønsberg Skateboardklubb, miljøet vi bygger, prosjektene vi jobber med og menneskene bak klubben.
+Hero-icon: 
 
 ----
 
@@ -18,7 +18,23 @@ Hero-primary-button-text: Bli medlem
 
 ----
 
+Hero-primary-button-url: 
+
+----
+
 Hero-secondary-button-text: Kontakt oss
+
+----
+
+Hero-secondary-button-url: 
+
+----
+
+Hero-image: 
+
+----
+
+Intro-icon: 
 
 ----
 
@@ -30,13 +46,19 @@ Intro-title: Frivillig drevet og rotfestet i Tønsberg
 
 ----
 
-Intro-body:
-
-Klubben drives av et engasjert styre og et aktivt miljø rundt skating i Tønsberg. Ambisjonen er enkel: gjøre det lettere å komme i gang, finne et fellesskap og bli værende over tid.
+Intro-body: Klubben drives av et engasjert styre og et aktivt miljø rundt skating i Tønsberg. Ambisjonen er enkel: gjøre det lettere å komme i gang, finne et fellesskap og bli værende over tid.
 
 ----
 
 Intro-button-text: Kontakt klubben
+
+----
+
+Intro-button-url: 
+
+----
+
+Primary-image: 
 
 ----
 
@@ -58,12 +80,34 @@ Values-title: Det vi vil at klubben skal kjennes som
 
 Values-items:
 
-- title: Lav terskel for å bli med
-  text: Du trenger ikke å kjenne noen fra før eller være god for å passe inn. Klubben skal være et trygt sted å starte og et godt sted å bli værende.
-- title: Bygget rundt Tønsberg-miljøet
-  text: Vi holder til i Messehall B og Gunnarsbøparken, og jobber hele tiden for å gjøre tilbudet sterkere for alle som skater i området.
-- title: Mer enn bare en skateøkt
-  text: Klubben skaper aktivitet, ansvarsfølelse og fellesskap gjennom sessions, arrangementer, opplæring og frivillig innsats.
+- 
+  icon: [ ]
+  title: Lav terskel for å bli med
+  text: >
+    Du trenger ikke å kjenne noen fra før
+    eller være god for å passe inn.
+    Klubben skal være et trygt sted å
+    starte og et godt sted å bli værende.
+- 
+  icon: [ ]
+  title: Bygget rundt Tønsberg-miljøet
+  text: >
+    Vi holder til i Messehall B og
+    Gunnarsbøparken, og jobber hele tiden
+    for å gjøre tilbudet sterkere for alle
+    som skater i området.
+- 
+  icon: [ ]
+  title: Mer enn bare en skateøkt
+  text: >
+    Klubben skaper aktivitet,
+    ansvarsfølelse og fellesskap gjennom
+    sessions, arrangementer, opplæring og
+    frivillig innsats.
+
+----
+
+Location-icon: 
 
 ----
 
@@ -75,17 +119,26 @@ Location-title: To samlingspunkter gjennom året
 
 ----
 
-Location-body:
-
-Klubben holder til i Messehall B, som i dag fungerer som midlertidig innendørshall, og i betongparken i Gunnarsbøparken som er et sentralt møtested i sommerhalvåret.
+Location-body: Klubben holder til i Messehall B, som i dag fungerer som midlertidig innendørshall, og i betongparken i Gunnarsbøparken som er et sentralt møtested i sommerhalvåret.
 
 ----
 
 Location-notes:
 
-- text: Messehall B gir et innendørstilbud når vær og sesong gjør uteparken mindre aktuell.
-- text: Gunnarsbøparken er et naturlig samlingspunkt når sesongen er i gang.
-- text: Klubbens hjertesak er å etablere en permanent innendørshall for skating i Tønsberg.
+- 
+  text: >
+    Messehall B gir et innendørstilbud når
+    vær og sesong gjør uteparken mindre
+    aktuell.
+- 
+  text: >
+    Gunnarsbøparken er et naturlig
+    samlingspunkt når sesongen er i gang.
+- 
+  text: >
+    Klubbens hjertesak er å etablere en
+    permanent innendørshall for skating i
+    Tønsberg.
 
 ----
 
@@ -93,7 +146,19 @@ Location-primary-button-text: Se åpningstider
 
 ----
 
+Location-primary-button-url: 
+
+----
+
 Location-secondary-button-text: Spør oss
+
+----
+
+Location-secondary-button-url: 
+
+----
+
+Secondary-image: 
 
 ----
 
@@ -113,21 +178,39 @@ Projects-title: Det vi jobber med nå
 
 ----
 
-Projects-button-text: Se støtte og samarbeid
+Projects-button-text: Se alle prosjekter
+
+----
+
+Projects-button-url: 
 
 ----
 
 Projects:
 
-- tag: Hall
+- 
+  tag: Hall
   title: Permanent innendørshall
-  text: Et helårstilbud er avgjørende for å sikre trening, utvikling og fellesskap gjennom hele året, uavhengig av vær og sesong.
-- tag: Park
+  text: >
+    Et helårstilbud er avgjørende for å
+    sikre trening, utvikling og fellesskap
+    gjennom hele året, uavhengig av vær og
+    sesong.
+- 
+  tag: Park
   title: Miniramp i betongparken
-  text: En ny miniramp vil gi et bredere aktivitetstilbud, både for nybegynnere som vil lære og for erfarne skatere som ønsker flere linjer og muligheter.
-- tag: Park
+  text: >
+    En ny miniramp vil gi et bredere
+    aktivitetstilbud, både for nybegynnere
+    som vil lære og for erfarne skatere som
+    ønsker flere linjer og muligheter.
+- 
+  tag: Park
   title: Ny asfaltstripe
-  text: Et nytt og tryggere underlag vil gjøre parken bedre egnet for daglig bruk, læring og fremtidige arrangementer.
+  text: >
+    Et nytt og tryggere underlag vil gjøre
+    parken bedre egnet for daglig bruk,
+    læring og fremtidige arrangementer.
 
 ----
 
@@ -137,15 +220,33 @@ Results-title: Noe av det vi allerede har fått til allerede
 
 Results:
 
-- tag: "2025"
+- 
+  tag: "2025"
   title: Sommerskate 2025
-  text: Åtte dager med aktivitet som samlet rundt 50 påmeldte barn og ungdom. Prosjektet ble muliggjort gjennom støtte fra Gjensidigestiftelsen og frivillig innsats fra klubbmiljøet. Zuccarellostiftelsen bidro også til utlånsutstyr og beskyttelse.
-- tag: "2025"
+  text: >
+    Åtte dager med aktivitet som samlet
+    rundt 50 påmeldte barn og ungdom.
+    Prosjektet ble muliggjort gjennom
+    støtte fra Gjensidigestiftelsen og
+    frivillig innsats fra klubbmiljøet.
+    Zuccarellostiftelsen bidro også til
+    utlånsutstyr og beskyttelse.
+- 
+  tag: "2025"
   title: Nye skateelementer i Messehall B
-  text: Corner med curb, A-frame, quarterpipe og C-curb ga hallen nye linjer og bedre flyt. Gjennomført med støtte fra Sparebankstiftelsen DNB.
-- tag: "2024"
+  text: >
+    Corner med curb, A-frame, quarterpipe og
+    C-curb ga hallen nye linjer og bedre
+    flyt. Gjennomført med støtte fra
+    Sparebankstiftelsen DNB.
+- 
+  tag: "2024"
   title: Utvidelse av Messehall B
-  text: Miniramp, mannypad, flatbar og quarterpipe ble bygget for å fornye hallen og gi bedre treningsmuligheter for flere nivåer.
+  text: >
+    Miniramp, mannypad, flatbar og
+    quarterpipe ble bygget for å fornye
+    hallen og gi bedre treningsmuligheter
+    for flere nivåer.
 
 ----
 
@@ -159,18 +260,26 @@ Team-title: Styret og ansvarspersoner
 
 Team-members:
 
-- name: Alexander Angell-Petersen
+- 
+  name: Alexander Angell-Petersen
   role: Styreleder
   email: alexanderlap@live.com
-- name: Kristin Goderstad
+- 
+  name: Kristin Goderstad
   role: Hallansvarlig Messehall B
   email: kristingoderstad@gmail.com
-- name: Torfinn Blokkum Flø
+- 
+  name: Torfinn Blokkum Flø
   role: Nestleder
   email: torfinn77@hotmail.com
-- name: Elisabeth Stiglic
+- 
+  name: Elisabeth Stiglic
   role: Barneidrettsansvarlig
   email: elisabethstiglic@gmail.com
+
+----
+
+Meta-description: Lær mer om Tønsberg Skateboardklubb, miljøet vi bygger, prosjektene vi jobber med og menneskene bak klubben.
 
 ----
 

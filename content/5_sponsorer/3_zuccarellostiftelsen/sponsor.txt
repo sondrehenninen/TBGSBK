@@ -2,8 +2,20 @@ Title: Zuccarellostiftelsen
 
 ----
 
-Sponsor_type: Stiftelse
+Logo: - file://nvchozbh1lv71vzk
+
+----
+
+Sponsor-type: Stiftelse
+
+----
+
+Link: 
 
 ----
 
 Description: Har bidratt til utlånsutstyr og tiltak som gjør klubbtilbudet mer tilgjengelig.
+
+----
+
+Uuid: s30hubp9g6uwriyo

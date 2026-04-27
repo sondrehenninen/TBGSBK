@@ -8,6 +8,11 @@ fields:
     label: Navn
     type: text
     required: true
+  logo:
+    label: Logo
+    type: files
+    max: 1
+    layout: cards
   sponsor_type:
     label: Type
     type: text

@@ -2,8 +2,20 @@ Title: Tønsberg kommune
 
 ----
 
-Sponsor_type: Offentlig samarbeidspartner
+Logo: - file://u82bm2vj9tbh2kex
+
+----
+
+Sponsor-type: Offentlig samarbeidspartner
+
+----
+
+Link: 
 
 ----
 
 Description: En viktig samarbeidspartner i arbeidet med aktivitetstilbud og lokale skateforhold i Tønsberg.
+
+----
+
+Uuid: ycxffa2hoo6eifym

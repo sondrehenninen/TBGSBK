@@ -2,7 +2,7 @@ Title: Tønsberg Skateboardklubb
 
 ----
 
-Hero-logo: - file://trq44ztwve9s2b5b
+Hero-logo: - file://svpzaogkmupcgfaf
 
 ----
 
@@ -12,7 +12,7 @@ Hero-intro:
 
 ----
 
-Hero-image: - file://ud5volxzcfyblhio
+Hero-image: - file://k4jvbquyhvr9n0wh
 
 ----
 
@@ -20,11 +20,19 @@ Hero-primary-button-text: Bli medlem
 
 ----
 
+Hero-primary-button-url: 
+
+----
+
 Hero-secondary-button-text: Kontakt oss
 
 ----
 
-Opening-icon: - file://vblqjuauywjxabsl
+Hero-secondary-button-url: 
+
+----
+
+Opening-icon: 
 
 ----
 
@@ -76,7 +84,11 @@ Opening-hours:
 
 ----
 
-Opening-button-text: Les mer om åpningstider
+Opening-button-text: 
+
+----
+
+Opening-button-url: 
 
 ----
 
@@ -97,6 +109,10 @@ Events-intro: Vi har ukentlige arrangementer og arrangementer som skjer gjennom 
 ----
 
 Events-button-text: Se alle arrangementer
+
+----
+
+Events-button-url: 
 
 ----
 
@@ -128,6 +144,10 @@ About-button-text: Om klubben
 
 ----
 
+About-button-url: 
+
+----
+
 Support-icon: 
 
 ----
@@ -156,6 +176,18 @@ Support-button-text: Om sponsorer
 
 ----
 
+Support-button-url: 
+
+----
+
+Prosjekter-button-text: 
+
+----
+
+Prosjekter-button-url: 
+
+----
+
 Faq-icon: 
 
 ----
@@ -176,22 +208,24 @@ Faq-button-text: Kontakt oss
 
 ----
 
+Faq-button-url: 
+
+----
+
 Faq:
 
 - 
   sporsmal: Kan jeg bli med uten erfaring?
   svar: >
     Absolutt. Vi har egne
-    nybegynnertreninger og erfarne
-    medlemmer som er glade for å hjelpe.
-    Du trenger ikke kunne stå på brett fra
-    før.
+    nybegynnertreninger og erfarne medlemmer
+    som er glade for å hjelpe. Du trenger
+    ikke kunne stå på brett fra før.
 - 
   sporsmal: Hvem er klubben for?
   svar: >
     Klubben er for alle aldre og nivåer,
-    fra de minste barna til voksne
-    skatere.
+    fra de minste barna til voksne skatere.
 - 
   sporsmal: >
     Holder dere til innendørs eller
@@ -203,33 +237,13 @@ Faq:
 - 
   sporsmal: Har dere faste treninger?
   svar: >
-    Ja, vi har faste dager i Messehall B.
-    Se åpningstidene over.
+    Ja, vi har faste dager i Messehall B. Se
+    åpningstidene over.
 - 
   sporsmal: Trenger jeg eget utstyr?
   svar: >
     Vi har noe utlånsutstyr i hallen, men
     det er alltid best å ha sitt eget.
-
-----
-
-Cta-label: Bli en del av miljøet
-
-----
-
-Cta-title: Vil du skate sammen med oss?
-
-----
-
-Cta-text: Som medlem blir du en del av et inkluderende fellesskap med tilgang til arrangementer, sessions, skateskoler og aktivitet gjennom året.
-
-----
-
-Cta-primary-button-text: Bli medlem
-
-----
-
-Cta-secondary-button-text: Kontakt oss
 
 ----
 
@@ -261,7 +275,31 @@ Gallery-button-text: Se alle bilder
 
 ----
 
+Gallery-button-url: 
+
+----
+
 Meta-description: Tønsberg Skateboardklubb er åpen for alle nivåer og aldre. Bli med i skatemiljøet i Tønsberg og finn åpningstider, arrangementer og medlemsinfo på ett sted.
+
+----
+
+Cta-label: Bli en del av miljøet
+
+----
+
+Cta-title: Vil du skate sammen med oss?
+
+----
+
+Cta-text: Som medlem blir du en del av et inkluderende fellesskap med tilgang til arrangementer, sessions, skateskoler og aktivitet gjennom året.
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Cta-secondary-button-text: Kontakt oss
 
 ----
 

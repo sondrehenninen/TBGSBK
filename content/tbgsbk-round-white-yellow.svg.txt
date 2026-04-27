@@ -1,0 +1,5 @@
+Uuid: kecdxg3cnckngpek
+
+----
+
+Template: image

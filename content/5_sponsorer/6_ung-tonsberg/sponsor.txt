@@ -2,8 +2,20 @@ Title: UNG Tønsberg
 
 ----
 
-Sponsor_type: Lokal samarbeidspartner
+Logo: - file://hw5d37enjdajbcim
+
+----
+
+Sponsor-type: Lokal samarbeidspartner
+
+----
+
+Link: 
 
 ----
 
 Description: Har vært med på å støtte arrangementer og aktiviteter rettet mot barn og unge i lokalmiljøet.
+
+----
+
+Uuid: yyn1aq4pc55bwshn

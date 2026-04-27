@@ -7,9 +7,11 @@ $heroImage = $page->hero_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/wheel.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -36,20 +38,10 @@ $heroImage = $page->hero_image()->toFile();
 </section>
 
 <section class="section">
-  <div class="container split-layout split-layout--align-start">
-    <div class="section-copy section-copy--wide">
-      <div class="flow">
-        <p class="label">Om arrangementet</p>
-        <?php if ($page->description()->isNotEmpty()): ?><?= $page->description()->kt() ?><?php endif ?>
-      </div>
-    </div>
+  <div class="container">
     <div class="flow">
-      <p class="label">Praktisk info</p>
-      <?php if ($page->location()->isNotEmpty()): ?><p><strong>Sted:</strong> <?= $page->location()->html() ?></p><?php endif ?>
-      <?php if ($page->start_date()->isNotEmpty()): ?><p><strong>Starter:</strong> <?= $page->start_date()->toDate('d.m.Y') ?></p><?php endif ?>
-      <?php if ($page->end_date()->isNotEmpty()): ?><p><strong>Slutter:</strong> <?= $page->end_date()->toDate('d.m.Y') ?></p><?php endif ?>
-      <?php if ($page->price()->isNotEmpty()): ?><p><strong>Pris:</strong> <?= $page->price()->html() ?></p><?php endif ?>
-      <?php if ($page->signup_link()->isNotEmpty()): ?><p><a class="btn" href="<?= $page->signup_link()->escape() ?>">Meld interesse</a></p><?php endif ?>
+      <p class="label">Om arrangementet</p>
+      <?php if ($page->description()->isNotEmpty()): ?><?= $page->description()->kt() ?><?php endif ?>
     </div>
   </div>
 </section>

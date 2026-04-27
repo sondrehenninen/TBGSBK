@@ -96,6 +96,13 @@ tabs:
               telefon:
                 label: Telefon
                 type: tel
+              photo:
+                label: Bilde
+                type: files
+                max: 1
+                layout: cards
+                uploads:
+                  template: image
 
   skjema:
     label: Send melding
@@ -104,6 +111,22 @@ tabs:
       skjema:
         type: fields
         fields:
+          form_recipient:
+            label: Mottaker-epost (dit meldinger sendes)
+            type: email
+            help: "Hvis tom, brukes e-postadressen fra Klubbinfo i globale innstillinger."
+          contact_text_label:
+            label: Label (venstre kolonne)
+            type: text
+            width: 1/3
+          contact_text_title:
+            label: Tittel (venstre kolonne)
+            type: text
+            width: 2/3
+          contact_text_body:
+            label: Tekst (venstre kolonne)
+            type: textarea
+            rows: 3
           form_label:
             label: Label
             type: text

@@ -6,9 +6,11 @@ $heroIcon = $page->hero_icon()->toFile();
 <section class="subpage-hero subpage-hero--text-only">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/wheel.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">

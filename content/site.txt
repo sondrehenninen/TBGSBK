@@ -2,7 +2,7 @@ Title: Tønsberg Skateboardklubb
 
 ----
 
-Club_name: Tønsberg Skateboardklubb
+Club-name: Tønsberg Skateboardklubb
 
 ----
 
@@ -10,27 +10,59 @@ Description: Tønsberg Skateboardklubb er åpen for alle nivåer og aldre. Bli m
 
 ----
 
-Footer_text: Frivillig drevet klubb for skating, fellesskap og mestring i Tønsberg.
+Footer-text: Frivillig drevet klubb for skating, fellesskap og mestring i Tønsberg.
 
 ----
 
-Menu_button_text: Meny
+Header-logo-mark: - file://mip6zqpc9hgtwcqn
 
 ----
 
-Nav_events_text: Arrangementer
+Header-logo-wordmark: - file://oqzespqam8tpqrzl
 
 ----
 
-Nav_about_text: Om klubben
+Hero-logo: 
 
 ----
 
-Nav_contact_text: Kontakt oss
+Footer-logo: - file://kecdxg3cnckngpek
 
 ----
 
-Nav_member_text: Bli medlem
+Menu-button-text: Meny
+
+----
+
+Nav-events-text: Arrangementer
+
+----
+
+Nav-events-url: 
+
+----
+
+Nav-about-text: Om klubben
+
+----
+
+Nav-about-url: 
+
+----
+
+Nav-contact-text: Kontakt oss
+
+----
+
+Nav-contact-url: 
+
+----
+
+Nav-member-text: Bli medlem
+
+----
+
+Nav-member-url: 
 
 ----
 
@@ -42,45 +74,83 @@ Telefon: 45412255
 
 ----
 
-Indoor_location: Messehall B, Tønsberg
+Instagram-url: https://instagram.com/tbgsbk
 
 ----
 
-Outdoor_location: Gunnarsbøparken, Tønsberg
+Facebook-url: https://facebook.com/tbgsbk
+
+----
+
+Season-notice: Messehall B er sesongstengt frem til september. Ekstraordinære åpningstider kan forekomme og blir kunngjort på Facebook og Instagram.
+
+----
+
+Opening-hours:
+
+- 
+  day: Tirsdag
+  time: 17:00–21:00
+- 
+  day: Torsdag
+  time: 17:00–21:00
+- 
+  day: Lørdag
+  time: 10:00–16:00
+- 
+  day: Sommer
+  time: >
+    Gunnarsbøparken er åpen hele
+    sommerhalvåret
+
+----
+
+Member-link: https://www.minidrett.no/medlemskap/1015568
+
+----
+
+Member-price: Medlemskap registreres via MinIdrett. Ta kontakt hvis du lurer på satser eller hvordan innmeldingen fungerer.
+
+----
+
+Cta-label: Bli en del av miljøet
+
+----
+
+Cta-title: Meld deg inn i klubben
+
+----
+
+Cta-text: Som medlem blir du en del av et inkluderende fellesskap med tilgang til arrangementer, sessions, skateskoler og aktivitet gjennom året.
+
+----
+
+Cta-primary-button-text: Bli medlem
+
+----
+
+Cta-primary-button-url: 
+
+----
+
+Cta-secondary-button-text: Kontakt oss
+
+----
+
+Cta-secondary-button-url: 
+
+----
+
+Cta-image: - file://yz8vqu09mothjnge
+
+----
+
+Indoor-location: Messehall B, Tønsberg
+
+----
+
+Outdoor-location: Gunnarsbøparken, Tønsberg
 
 ----
 
 Poststed: Tønsberg, Vestfold
-
-----
-
-Season_notice: Messehall B er sesongstengt frem til september. Ekstraordinære åpningstider kan forekomme og blir kunngjort på Facebook og Instagram.
-
-----
-
-Opening_hours:
-
-- day: Tirsdag
-  time: 17:00–21:00
-- day: Torsdag
-  time: 17:00–21:00
-- day: Lørdag
-  time: 10:00–16:00
-- day: Sommer
-  time: Gunnarsbøparken er åpen hele sommerhalvåret
-
-----
-
-Member_link: https://www.minidrett.no/medlemskap/1015568
-
-----
-
-Member_price: Medlemskap registreres via MinIdrett. Ta kontakt hvis du lurer på satser eller hvordan innmeldingen fungerer.
-
-----
-
-Instagram_url: https://instagram.com/tbgsbk
-
-----
-
-Facebook_url: https://facebook.com/tbgsbk

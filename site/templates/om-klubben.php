@@ -6,15 +6,20 @@ $primaryImage = $page->primary_image()->toFile();
 $locationIcon = $page->location_icon()->toFile();
 $secondaryImage = $page->secondary_image()->toFile();
 $ctaImage = $site->cta_image()->toFile();
+$galleryIcon = $page->gallery_icon()->toFile();
+$galleryFeaturedImage = $page->gallery_featured_image()->toFile();
+$galleryImages = $page->gallery_images()->toFiles();
 ?>
 <?php snippet('header') ?>
 
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/skull.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -33,16 +38,18 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7565.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Skatere samlet i Tønsberg Skateboardklubb')->esc() : 'Skatere samlet i Tønsberg Skateboardklubb' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Skatere samlet i Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= $introIcon ? $introIcon->url() : url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
+      <?php if ($introIcon): ?><img class="section-icon" src="<?= $introIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <?php if ($page->intro_label()->isNotEmpty()): ?><p class="label"><?= $page->intro_label()->html() ?></p><?php endif ?>
@@ -53,9 +60,11 @@ $ctaImage = $site->cta_image()->toFile();
       </div>
     </div>
     <div class="about-story">
+      <?php if ($primaryImage): ?>
       <div class="media-frame">
-        <img class="event-photo" src="<?= $primaryImage ? $primaryImage->url() : url('assets/Bilder til nettsiden/Permanent inehall/Kopi av Innehall.webp') ?>" alt="<?= $primaryImage ? $primaryImage->alt()->or('Skisse av permanent innendørshall for Tønsberg Skateboardklubb')->esc() : 'Skisse av permanent innendørshall for Tønsberg Skateboardklubb' ?>">
+        <img class="event-photo" src="<?= $primaryImage->url() ?>" alt="<?= $primaryImage->alt()->or('Skisse av permanent innendørshall for Tønsberg Skateboardklubb')->esc() ?>">
       </div>
+      <?php endif ?>
       <div class="about-story__body">
         <?= $page->intro_story()->kt() ?>
       </div>
@@ -72,7 +81,7 @@ $ctaImage = $site->cta_image()->toFile();
     <div class="value-grid">
       <?php foreach ($page->values_items()->toStructure() as $item): $icon = $item->icon()->toFile(); ?>
       <article class="value-card">
-        <img class="value-card__icon" src="<?= $icon ? $icon->url() : url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
+        <?php if ($icon): ?><img class="value-card__icon" src="<?= $icon->url() ?>" alt=""><?php endif ?>
         <h3><?= $item->title()->html() ?></h3>
         <p><?= $item->text()->html() ?></p>
       </article>
@@ -84,7 +93,7 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section">
   <div class="container split-layout split-layout--reverse split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= $locationIcon ? $locationIcon->url() : url('assets/Ilustrasjoner/white/SVG/truck.svg') ?>" alt="">
+      <?php if ($locationIcon): ?><img class="section-icon" src="<?= $locationIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <?php if ($page->location_label()->isNotEmpty()): ?><p class="label"><?= $page->location_label()->html() ?></p><?php endif ?>
@@ -98,16 +107,15 @@ $ctaImage = $site->cta_image()->toFile();
           <?php endforeach ?>
         </ul>
         <?php endif ?>
-        <div class="btn-group">
-          <?php $url = $page->location_primary_button_url()->isNotEmpty() ? $page->location_primary_button_url()->escape() : (($p = page('apningstider')) ? $p->url() : ''); if ($url): ?><a class="btn" href="<?= $url ?>"><?= $page->location_primary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
-          <?php $url = $page->location_secondary_button_url()->isNotEmpty() ? $page->location_secondary_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->location_secondary_button_text()->or('Spør oss')->html() ?></a><?php endif ?>
-        </div>
+        <?php $url = $page->location_primary_button_url()->isNotEmpty() ? $page->location_primary_button_url()->escape() : (($p = page('apningstider')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->location_primary_button_text()->or('Se åpningstider')->html() ?></a><?php endif ?>
       </div>
     </div>
     <div class="about-story">
+      <?php if ($secondaryImage): ?>
       <div class="media-frame">
-        <img class="event-photo" src="<?= $secondaryImage ? $secondaryImage->url() : url('assets/Bilder til nettsiden/Nye elementer 2024/Bilde 07.06.2024, 10 28 43.webp') ?>" alt="<?= $secondaryImage ? $secondaryImage->alt()->or('Miniramp og nye elementer i Messehall B')->esc() : 'Miniramp og nye elementer i Messehall B' ?>">
+        <img class="event-photo" src="<?= $secondaryImage->url() ?>" alt="<?= $secondaryImage->alt()->or('Miniramp og nye elementer i Messehall B')->esc() ?>">
       </div>
+      <?php endif ?>
       <div class="about-story__body">
         <?= $page->location_story()->kt() ?>
       </div>
@@ -124,29 +132,22 @@ $ctaImage = $site->cta_image()->toFile();
       </div>
       <?php $url = $page->projects_button_url()->isNotEmpty() ? $page->projects_button_url()->escape() : (($p = page('sponsorer')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>"><?= $page->projects_button_text()->or('Se støtte og samarbeid')->html() ?></a><?php endif ?>
     </div>
+    <?php $listedProjects = page('prosjekter') ? page('prosjekter')->children()->listed()->filter(fn($p) => !$p->completed()->isTrue()) : null; ?>
+    <?php if ($listedProjects && $listedProjects->count()): ?>
     <div class="project-grid">
-      <?php foreach ($page->projects()->toStructure() as $project): ?>
-      <article class="project-card">
-        <span class="project-card__tag"><?= $project->tag()->html() ?></span>
+      <?php foreach ($listedProjects as $project): ?>
+      <a href="<?= $project->url() ?>" class="project-card">
+        <?php if ($project->card_tag()->isNotEmpty()): ?><span class="project-card__tag"><?= $project->card_tag()->html() ?></span><?php endif ?>
         <h3><?= $project->title()->html() ?></h3>
-        <p><?= $project->text()->html() ?></p>
-      </article>
+        <?php if ($project->hero_intro()->isNotEmpty()): ?><p><?= $project->hero_intro()->html() ?></p><?php endif ?>
+      </a>
       <?php endforeach ?>
     </div>
-    <div class="results-layout">
-      <div class="results-intro">
-        <h3><?= $page->results_title()->or('Noe av det vi allerede har fått til allerede')->html() ?></h3>
-      </div>
-      <div class="results-list">
-        <?php foreach ($page->results()->toStructure() as $result): ?>
-        <article class="result-card">
-          <span class="result-card__tag"><?= $result->tag()->html() ?></span>
-          <h4><?= $result->title()->html() ?></h4>
-          <p><?= $result->text()->html() ?></p>
-        </article>
-        <?php endforeach ?>
-      </div>
-    </div>
+    <?php endif ?>
+    <?php
+      $completedProjects = page('prosjekter') ? page('prosjekter')->children()->listed()->filter(fn($p) => $p->completed()->isTrue()) : null;
+      snippet('results-slider', ['projects' => $completedProjects, 'heading' => $page->results_title()->or('Noe av det vi allerede har fått til')->value()]);
+    ?>
   </div>
 </section>
 
@@ -156,10 +157,12 @@ $ctaImage = $site->cta_image()->toFile();
       <?php if ($page->team_label()->isNotEmpty()): ?><p class="label"><?= $page->team_label()->html() ?></p><?php endif ?>
       <h2><?= $page->team_title()->or('Styret og ansvarspersoner')->html() ?></h2>
     </div>
-    <div class="card-grid card-grid--two team-grid">
-      <?php foreach ($page->team_members()->toStructure() as $member): ?>
+    <div class="team-slider">
+      <?php foreach ($page->team_members()->toStructure() as $member): $photo = $member->photo()->toFile(); ?>
       <article class="contact-person contact-person--profile">
-        <div class="contact-person__media" aria-hidden="true"></div>
+        <div class="contact-person__media" aria-hidden="true">
+          <?php if ($photo): ?><img src="<?= $photo->url() ?>" alt="<?= $photo->alt()->or($member->name()->esc()) ?>"><?php endif ?>
+        </div>
         <div class="contact-person__body">
           <p class="contact-person__name"><?= $member->name()->html() ?></p>
           <div class="contact-person__details">
@@ -169,6 +172,30 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </article>
       <?php endforeach ?>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container">
+    <div class="section-copy">
+      <?php if ($galleryIcon): ?><img class="section-icon" src="<?= $galleryIcon->url() ?>" alt="<?= $galleryIcon->alt()->or('Ikon for galleri')->esc() ?>"><?php endif ?>
+      <div class="section-heading gallery-heading">
+        <p class="label"><?= $page->gallery_label()->or('Galleri')->html() ?></p>
+        <div class="section-heading--split">
+          <h2><?= $page->gallery_title()->or('Øyeblikk fra miljøet')->html() ?></h2>
+          <?php if ($page->gallery_intro()->isNotEmpty()): ?><p><?= $page->gallery_intro()->html() ?></p><?php endif ?>
+          <?php $url = $page->gallery_button_url()->isNotEmpty() ? $page->gallery_button_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="btn btn--secondary-dark" href="<?= $url ?>">→ <?= $page->gallery_button_text()->or('Kontakt klubben')->html() ?></a><?php endif ?>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <?php foreach ($galleryImages as $index => $image): ?>
+      <img class="gallery-card<?= $index === 0 ? ' gallery-card--large' : '' ?>" src="<?= $image->url() ?>" alt="<?= $image->alt()->or('Galleri fra Tønsberg Skateboardklubb')->esc() ?>">
+      <?php endforeach ?>
+      <?php if (!$galleryImages->count() && $galleryFeaturedImage): ?>
+      <img class="gallery-card gallery-card--large" src="<?= $galleryFeaturedImage->url() ?>" alt="<?= $galleryFeaturedImage->alt()->or('Klubbaktivitet')->esc() ?>">
+      <?php endif ?>
     </div>
   </div>
 </section>

@@ -10,9 +10,6 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
-      <div class="subpage-hero__mark">
-        <img src="<?= url('assets/Ilustrasjoner/white/SVG/skull.svg') ?>" alt="">
-      </div>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -31,16 +28,17 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7565.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Skatere samlet i Tønsberg Skateboardklubb')->esc() : 'Skatere samlet i Tønsberg Skateboardklubb' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Skatere samlet i Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
       <div class="flow">
         <?php if ($page->label()->isNotEmpty()): ?><p class="label"><?= $page->label()->html() ?></p><?php endif ?>
         <h2>Frivillig drevet og rotfestet i Tønsberg</h2>
@@ -48,11 +46,13 @@ $ctaImage = $site->cta_image()->toFile();
         <?php if ($kontakt = page('kontakt')): ?><a class="btn btn--secondary-dark" href="<?= $kontakt->url() ?>">Kontakt klubben</a><?php endif ?>
       </div>
     </div>
+    <?php if ($primaryImage): ?>
     <div class="about-story">
       <div class="media-frame">
-        <img class="event-photo" src="<?= $primaryImage ? $primaryImage->url() : url('assets/Bilder til nettsiden/Permanent inehall/Kopi av Innehall.webp') ?>" alt="<?= $primaryImage ? $primaryImage->alt()->or('Skisse av permanent innendørshall')->esc() : 'Skisse av permanent innendørshall' ?>">
+        <img class="event-photo" src="<?= $primaryImage->url() ?>" alt="<?= $primaryImage->alt()->or('Skisse av permanent innendørshall')->esc() ?>">
       </div>
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -64,17 +64,14 @@ $ctaImage = $site->cta_image()->toFile();
     </div>
     <div class="value-grid">
       <article class="value-card">
-        <img class="value-card__icon value-card__icon--narrow" src="<?= url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
         <h3>Lav terskel for å bli med</h3>
         <p>Du trenger ikke å kjenne noen fra før eller være god for å passe inn. Klubben skal være et trygt sted å starte og et godt sted å bli værende.</p>
       </article>
       <article class="value-card">
-        <img class="value-card__icon" src="<?= url('assets/Ilustrasjoner/white/SVG/wheel.svg') ?>" alt="">
         <h3>Bygget rundt Tønsberg-miljøet</h3>
         <p>Vi holder til i Messehall B og Gunnarsbøparken, og jobber hele tiden for å gjøre tilbudet sterkere for alle som skater i området.</p>
       </article>
       <article class="value-card">
-        <img class="value-card__icon value-card__icon--wide" src="<?= url('assets/Ilustrasjoner/white/SVG/truck.svg') ?>" alt="">
         <h3>Mer enn bare en skateøkt</h3>
         <p>Klubben skaper aktivitet, ansvarsfølelse og fellesskap gjennom sessions, arrangementer, opplæring og frivillig innsats.</p>
       </article>
@@ -85,7 +82,6 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section">
   <div class="container split-layout split-layout--reverse split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= url('assets/Ilustrasjoner/white/SVG/truck.svg') ?>" alt="">
       <div class="flow">
         <p class="label">Hvor vi holder til</p>
         <?php if ($page->secondary_title()->isNotEmpty()): ?><h2><?= $page->secondary_title()->html() ?></h2><?php endif ?>
@@ -103,11 +99,13 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($secondaryImage): ?>
     <div class="about-story">
       <div class="media-frame">
-        <img class="event-photo" src="<?= $secondaryImage ? $secondaryImage->url() : url('assets/Bilder til nettsiden/Nye elementer 2024/Bilde 07.06.2024, 10 28 43.webp') ?>" alt="<?= $secondaryImage ? $secondaryImage->alt()->or('Miniramp og nye elementer i Messehall B')->esc() : 'Miniramp og nye elementer i Messehall B' ?>">
+        <img class="event-photo" src="<?= $secondaryImage->url() ?>" alt="<?= $secondaryImage->alt()->or('Miniramp og nye elementer i Messehall B')->esc() ?>">
       </div>
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -144,9 +142,6 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
-      <div class="subpage-hero__mark">
-        <img src="<?= url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
-      </div>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -165,9 +160,11 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Permanent inehall/Kopi av Innehall.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Innendørshallen til Tønsberg Skateboardklubb')->esc() : 'Innendørshallen til Tønsberg Skateboardklubb' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Innendørshallen til Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -202,14 +199,13 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section section--surface">
   <div class="container">
     <div class="cta-panel cta-panel--image">
+      <?php if ($ctaImage || $heroImage): ?>
       <div class="cta-panel__media">
-        <img src="<?= $ctaImage ? $ctaImage->url() : ($heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Permanent inehall/Kopi av Innehall.webp')) ?>" alt="<?= $ctaImage ? $ctaImage->alt()->or('Innendørshallen til Tønsberg Skateboardklubb')->esc() : 'Innendørshallen til Tønsberg Skateboardklubb' ?>">
+        <img src="<?= $ctaImage ? $ctaImage->url() : $heroImage->url() ?>" alt="<?= $ctaImage ? $ctaImage->alt()->or('Innendørshallen til Tønsberg Skateboardklubb')->esc() : $heroImage->alt()->or('Innendørshallen til Tønsberg Skateboardklubb')->esc() ?>">
       </div>
+      <?php endif ?>
       <div class="cta-panel__content">
         <div class="cta-panel__copy">
-          <div class="cta-panel__mark">
-            <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
-          </div>
           <div class="cta-panel__text">
             <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
             <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>
@@ -228,9 +224,6 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
-      <div class="subpage-hero__mark">
-        <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
-      </div>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -249,25 +242,28 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7315.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Barn og unge samlet på klubbaktivitet')->esc() : 'Barn og unge samlet på klubbaktivitet' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Barn og unge samlet på klubbaktivitet')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
       <div class="flow">
         <?php if ($page->label()->isNotEmpty()): ?><p class="label"><?= $page->label()->html() ?></p><?php endif ?>
         <h2>Et medlemskap er mer enn bare tilgang</h2>
         <?= $page->body()->kt() ?>
       </div>
     </div>
+    <?php if ($primaryImage): ?>
     <div class="media-frame">
-      <img class="event-photo" src="<?= $primaryImage ? $primaryImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_5676.webp') ?>" alt="<?= $primaryImage ? $primaryImage->alt()->or('Skatere og frivillige samlet rundt aktivitet i klubben')->esc() : 'Skatere og frivillige samlet rundt aktivitet i klubben' ?>">
+      <img class="event-photo" src="<?= $primaryImage->url() ?>" alt="<?= $primaryImage->alt()->or('Skatere og frivillige samlet rundt aktivitet i klubben')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -321,7 +317,6 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= url('assets/Ilustrasjoner/white/SVG/broken_board1.svg') ?>" alt="">
       <div class="flow">
         <p class="label">Vanlige spørsmål</p>
         <h2>Det folk ofte lurer på først</h2>
@@ -342,14 +337,13 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section">
   <div class="container">
     <div class="cta-panel cta-panel--image">
+      <?php if ($ctaImage || $primaryImage): ?>
       <div class="cta-panel__media">
-        <img src="<?= $ctaImage ? $ctaImage->url() : ($primaryImage ? $primaryImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_5676.webp')) ?>" alt="<?= $ctaImage ? $ctaImage->alt()->or('Skatere samlet i klubbmiljøet')->esc() : 'Skatere samlet i klubbmiljøet' ?>">
+        <img src="<?= $ctaImage ? $ctaImage->url() : $primaryImage->url() ?>" alt="<?= $ctaImage ? $ctaImage->alt()->or('Skatere samlet i klubbmiljøet')->esc() : $primaryImage->alt()->or('Skatere samlet i klubbmiljøet')->esc() ?>">
       </div>
+      <?php endif ?>
       <div class="cta-panel__content">
         <div class="cta-panel__copy">
-          <div class="cta-panel__mark">
-            <img src="<?= url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
-          </div>
           <div class="cta-panel__text">
             <?php if ($site->cta_title()->isNotEmpty()): ?><h2><?= $site->cta_title()->html() ?></h2><?php endif ?>
             <?php if ($site->cta_text()->isNotEmpty()): ?><p><?= $site->cta_text()->html() ?></p><?php endif ?>

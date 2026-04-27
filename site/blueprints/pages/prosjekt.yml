@@ -12,6 +12,18 @@ tabs:
             label: Sidetittel
             type: text
             required: true
+          card_tag:
+            label: Tag (vises på kort)
+            type: text
+            width: 1/2
+          completed:
+            label: Ferdig
+            type: toggle
+            default: false
+            text:
+              - "Nei"
+              - "Ja"
+            width: 1/2
           hero_icon:
             label: Hero-ikon
             type: files
@@ -112,7 +124,7 @@ tabs:
             type: text
             width: 1/2
           cta_button_url:
-            label: Lenke (valgfri – standard: kontaktsiden)
+            label: "Lenke (valgfri – standard: kontaktsiden)"
             type: url
             width: 1/2
 

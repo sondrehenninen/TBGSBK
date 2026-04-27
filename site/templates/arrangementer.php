@@ -14,9 +14,11 @@ $practicalIcon = $page->practical_icon()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/wheel.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -35,9 +37,11 @@ $practicalIcon = $page->practical_icon()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7565.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Arrangementer i Tønsberg Skateboardklubb')->esc() : 'Arrangementer i Tønsberg Skateboardklubb' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Arrangementer i Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -48,7 +52,6 @@ $practicalIcon = $page->practical_icon()->toFile();
         <p class="label"><?= $page->list_label()->or('Neste på programmet')->html() ?></p>
         <h2><?= $page->list_title()->or('Kommende arrangementer')->html() ?></h2>
       </div>
-      <?php $url = $page->list_link_url()->isNotEmpty() ? $page->list_link_url()->escape() : (($p = page('kontakt')) ? $p->url() : ''); if ($url): ?><a class="cta-link" href="<?= $url ?>"><?= $page->list_link_text()->or('Kontakt oss om arrangementer')->html() ?></a><?php endif ?>
     </div>
     <div class="event-list">
       <?php foreach ($events as $event): ?>
@@ -71,7 +74,7 @@ $practicalIcon = $page->practical_icon()->toFile();
 <section class="section">
   <div class="container">
     <div class="section-copy section-copy--wide">
-      <img class="section-icon" src="<?= $expectationIcon ? $expectationIcon->url() : url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
+      <?php if ($expectationIcon): ?><img class="section-icon" src="<?= $expectationIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <p class="label"><?= $page->expectation_label()->or('Hva du kan forvente')->html() ?></p>
@@ -109,7 +112,7 @@ $practicalIcon = $page->practical_icon()->toFile();
 <section class="section section--surface">
   <div class="container">
     <div class="section-copy section-copy--wide">
-      <img class="section-icon" src="<?= $practicalIcon ? $practicalIcon->url() : url('assets/Ilustrasjoner/white/SVG/tool1.svg') ?>" alt="">
+      <?php if ($practicalIcon): ?><img class="section-icon" src="<?= $practicalIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <p class="label"><?= $page->practical_label()->or('Praktisk info')->html() ?></p>

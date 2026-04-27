@@ -2,8 +2,20 @@ Title: Frifond
 
 ----
 
-Sponsor_type: Tilskuddsordning
+Logo: - file://icfylcgzrgwyaltq
+
+----
+
+Sponsor-type: Tilskuddsordning
+
+----
+
+Link: 
 
 ----
 
 Description: Har bidratt til aktivitet og klubbprosjekter med lokal forankring.
+
+----
+
+Uuid: eccue755zcryrrsb

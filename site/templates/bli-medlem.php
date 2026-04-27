@@ -13,9 +13,11 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/berrings2.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -34,16 +36,18 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_7315.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Barn og unge samlet på klubbaktivitet i Tønsberg Skateboardklubb')->esc() : 'Barn og unge samlet på klubbaktivitet i Tønsberg Skateboardklubb' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Barn og unge samlet på klubbaktivitet i Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= $introIcon ? $introIcon->url() : url('assets/Ilustrasjoner/white/SVG/board1.svg') ?>" alt="">
+      <?php if ($introIcon): ?><img class="section-icon" src="<?= $introIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <?php if ($page->intro_label()->isNotEmpty()): ?><p class="label"><?= $page->intro_label()->html() ?></p><?php endif ?>
@@ -52,9 +56,11 @@ $ctaImage = $site->cta_image()->toFile();
         <?= $page->intro_body()->kt() ?>
       </div>
     </div>
+    <?php if ($primaryImage): ?>
     <div class="media-frame">
-      <img class="event-photo" src="<?= $primaryImage ? $primaryImage->url() : url('assets/Bilder til nettsiden/Sommerskate 2025/IMG_5676.webp') ?>" alt="<?= $primaryImage ? $primaryImage->alt()->or('Skatere og frivillige samlet rundt aktivitet i klubben')->esc() : 'Skatere og frivillige samlet rundt aktivitet i klubben' ?>">
+      <img class="event-photo" src="<?= $primaryImage->url() ?>" alt="<?= $primaryImage->alt()->or('Skatere og frivillige samlet rundt aktivitet i klubben')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
@@ -76,31 +82,15 @@ $ctaImage = $site->cta_image()->toFile();
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <?php if ($page->steps_label()->isNotEmpty()): ?><p class="label"><?= $page->steps_label()->html() ?></p><?php endif ?>
-      <h2><?= $page->steps_title()->or('Tre enkle steg for å komme i gang')->html() ?></h2>
-    </div>
-    <div class="card-grid card-grid--three">
-      <?php foreach ($page->steps()->toStructure() as $step): ?>
-      <article class="card program-card">
-        <span class="event-row__tag"><?= $step->tag()->html() ?></span>
-        <h3><?= $step->title()->html() ?></h3>
-        <p><?= $step->text()->html() ?></p>
-      </article>
-      <?php endforeach ?>
-    </div>
-  </div>
-</section>
-
 <section class="section section--surface">
   <div class="container split-layout split-layout--reverse split-layout--align-start">
+    <?php if ($secondaryImage): ?>
     <div class="media-frame">
-      <img class="event-photo" src="<?= $secondaryImage ? $secondaryImage->url() : url('assets/Bilder til nettsiden/Nye elementer 2025/a frame.webp') ?>" alt="<?= $secondaryImage ? $secondaryImage->alt()->or('Skateelementer i hallen til Tønsberg Skateboardklubb')->esc() : 'Skateelementer i hallen til Tønsberg Skateboardklubb' ?>">
+      <img class="event-photo" src="<?= $secondaryImage->url() ?>" alt="<?= $secondaryImage->alt()->or('Skateelementer i hallen til Tønsberg Skateboardklubb')->esc() ?>">
     </div>
+    <?php endif ?>
     <div class="section-copy">
-      <img class="section-icon" src="<?= $practicalIcon ? $practicalIcon->url() : url('assets/Ilustrasjoner/white/SVG/tool1.svg') ?>" alt="">
+      <?php if ($practicalIcon): ?><img class="section-icon" src="<?= $practicalIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <?php if ($page->practical_label()->isNotEmpty()): ?><p class="label"><?= $page->practical_label()->html() ?></p><?php endif ?>
@@ -126,7 +116,7 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="section">
   <div class="container split-layout split-layout--align-start">
     <div class="section-copy">
-      <img class="section-icon" src="<?= $faqIcon ? $faqIcon->url() : url('assets/Ilustrasjoner/white/SVG/broken_board1.svg') ?>" alt="">
+      <?php if ($faqIcon): ?><img class="section-icon" src="<?= $faqIcon->url() ?>" alt=""><?php endif ?>
       <div class="flow">
         <div class="section-heading">
           <?php if ($page->faq_label()->isNotEmpty()): ?><p class="label"><?= $page->faq_label()->html() ?></p><?php endif ?>

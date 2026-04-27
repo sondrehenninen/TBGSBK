@@ -1,14 +1,18 @@
 <?php
 $heroIcon = $page->hero_icon()->toFile();
+$activeProjects    = $page->children()->listed()->filter(fn($p) => !$p->completed()->isTrue());
+$completedProjects = $page->children()->listed()->filter(fn($p) => $p->completed()->isTrue());
 ?>
 <?php snippet('header') ?>
 
 <section class="subpage-hero subpage-hero--text-only">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/wheel.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -37,8 +41,9 @@ $heroIcon = $page->hero_icon()->toFile();
       <h2><?= $page->list_title()->or('Prosjekter vi jobber med')->html() ?></h2>
     </div>
     <?php if ($page->list_intro()->isNotEmpty()): ?><p><?= $page->list_intro()->html() ?></p><?php endif ?>
+    <?php if ($activeProjects->count()): ?>
     <div class="event-list">
-      <?php foreach ($page->children()->listed() as $prosjekt): ?>
+      <?php foreach ($activeProjects as $prosjekt): ?>
       <article class="event-row event-row--details">
         <div class="event-row__content">
           <h3 class="event-row__title"><?= $prosjekt->title()->html() ?></h3>
@@ -48,8 +53,17 @@ $heroIcon = $page->hero_icon()->toFile();
       </article>
       <?php endforeach ?>
     </div>
+    <?php endif ?>
   </div>
 </section>
+
+<?php if ($completedProjects->count()): ?>
+<section class="section">
+  <div class="container container--stack">
+    <?php snippet('results-slider', ['projects' => $completedProjects, 'heading' => 'Noe av det vi allerede har fått til']); ?>
+  </div>
+</section>
+<?php endif ?>
 
 <?php snippet('global-cta') ?>
 

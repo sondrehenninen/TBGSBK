@@ -2,8 +2,20 @@ Title: Sparebankstiftelsen DNB
 
 ----
 
-Sponsor_type: Stiftelse
+Logo: - file://n5onpl9ifjwrwhlm
+
+----
+
+Sponsor-type: Stiftelse
+
+----
+
+Link: 
 
 ----
 
 Description: Har bidratt til utvikling av nye skateelementer og et sterkere aktivitetstilbud i hallen.
+
+----
+
+Uuid: 9siqijfs4wygcplr

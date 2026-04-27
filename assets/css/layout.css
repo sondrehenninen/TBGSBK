@@ -264,8 +264,9 @@
 }
 
 .subpage-hero__top {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) minmax(320px, 1fr);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--space-5);
   align-items: start;
 }
@@ -298,6 +299,8 @@
   display: grid;
   align-content: start;
   gap: var(--space-3);
+  flex: 1;
+  min-width: 0;
 }
 
 .subpage-hero__mark {
@@ -313,7 +316,7 @@
 .subpage-hero__heading {
   display: grid;
   gap: var(--space-4);
-  max-width: 520px;
+  max-width: 700px;
 }
 
 .subpage-hero__heading h1 {
@@ -329,7 +332,7 @@
   align-content: start;
   justify-items: start;
   width: 100%;
-  max-width: none;
+  max-width: 700px;
   padding-top: 4px;
 }
 
@@ -383,7 +386,7 @@
 }
 
 .subpage-hero--text-only .subpage-hero__top {
-  grid-template-columns: auto minmax(0, 1fr) minmax(320px, 1fr);
+  flex-wrap: wrap;
 }
 
 @media (max-width: 860px) {
@@ -537,6 +540,24 @@
 }
 
 .footer-nav a:hover {
+  opacity: 0.5;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  transition: opacity 160ms ease;
+}
+
+.footer-social__link:hover {
   opacity: 0.5;
 }
 

@@ -2,8 +2,20 @@ Title: Gjensidigestiftelsen
 
 ----
 
-Sponsor_type: Stiftelse
+Logo: - file://c73kzptrozo85cz2
+
+----
+
+Sponsor-type: Stiftelse
+
+----
+
+Link: 
 
 ----
 
 Description: Har støttet aktiviteter og arrangementer som gjør det lettere for flere barn og unge å delta.
+
+----
+
+Uuid: y5xdzc4d5ydnwvfw

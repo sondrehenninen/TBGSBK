@@ -2,7 +2,11 @@ Title: Arrangementer
 
 ----
 
-Meta-description: Se faste tilbud, camps og aktiviteter i Tønsberg Skateboardklubb. Finn datoer, status og praktisk info på ett sted.
+Hero-icon: 
+
+----
+
+Hero-image: - file://km2cbbpsam6cnhw6
 
 ----
 
@@ -18,7 +22,15 @@ Hero-primary-button-text: Bli medlem
 
 ----
 
+Hero-primary-button-url: 
+
+----
+
 Hero-secondary-button-text: Kontakt oss
+
+----
+
+Hero-secondary-button-url: 
 
 ----
 
@@ -31,6 +43,10 @@ List-title: Kommende arrangementer
 ----
 
 List-link-text: Kontakt oss om arrangementer
+
+----
+
+Expectation-icon: 
 
 ----
 
@@ -54,7 +70,15 @@ Expectation-primary-button-text: Spør oss først
 
 ----
 
+Expectation-primary-button-url: 
+
+----
+
 Expectation-secondary-button-text: Se åpningstider
+
+----
+
+Expectation-secondary-button-url: 
 
 ----
 
@@ -68,22 +92,43 @@ Offers-title: Gjennom året i klubben
 
 Offers:
 
-- tag: Ungdom
+- 
+  tag: Ungdom
   title: Afterschool Skate
-  text: Et lavterskel tilbud etter skoletid for barn og ungdom som vil ha et fast sted å dra, med voksne og erfarne klubbfolk i nærheten.
+  text: >
+    Et lavterskel tilbud etter skoletid for
+    barn og ungdom som vil ha et fast sted
+    å dra, med voksne og erfarne klubbfolk
+    i nærheten.
   meta: Etter skoletid • Sosialt og trygt
-- tag: Sosialt
+- 
+  tag: Sosialt
   title: Vaffelskate
-  text: En av klubbens hyggeligste kvelder, der skating kombineres med mat, pauser og tid til å henge sammen.
+  text: >
+    En av klubbens hyggeligste kvelder, der
+    skating kombineres med mat, pauser og
+    tid til å henge sammen.
   meta: For flere aldre • Lav terskel
-- tag: Alle
+- 
+  tag: Alle
   title: Skate and Scoot
-  text: Felles økter for flere hjulmiljøer, med tydelige rammer og fokus på respekt, trygghet og god flyt i hallen.
+  text: >
+    Felles økter for flere hjulmiljøer,
+    med tydelige rammer og fokus på
+    respekt, trygghet og god flyt i hallen.
   meta: Åpent nivå • Felles økt
-- tag: Jenter
+- 
+  tag: Jenter
   title: Girlskate
-  text: Egne sesjoner for jenter som vil prøve skating, bygge trygghet eller møte andre i samme miljø.
+  text: >
+    Egne sesjoner for jenter som vil prøve
+    skating, bygge trygghet eller møte
+    andre i samme miljø.
   meta: Trygt miljø • Fokus på mestring
+
+----
+
+Practical-icon: 
 
 ----
 
@@ -97,10 +142,25 @@ Practical-title: Før du kommer
 
 Practical-notes:
 
-- text: Følg Instagram og Facebook for siste oppdateringer og eventuelle endringer.
-- text: Noen arrangementer har begrenset kapasitet og krever at du melder interesse på forhånd.
-- text: Har du eget brett og hjelm, ta det gjerne med. Hvis ikke, spør oss hva som er mulig.
-- text: Er du helt ny, er det lov å møte opp usikker. Vi vil at terskelen skal være lav.
+- 
+  text: >
+    Følg Instagram og Facebook for siste
+    oppdateringer og eventuelle endringer.
+- 
+  text: >
+    Noen arrangementer har begrenset
+    kapasitet og krever at du melder
+    interesse på forhånd.
+- 
+  text: >
+    Har du eget brett og hjelm, ta det
+    gjerne med. Hvis ikke, spør oss hva som
+    er mulig.
+- 
+  text: >
+    Er du helt ny, er det lov å møte opp
+    usikker. Vi vil at terskelen skal være
+    lav.
 
 ----
 
@@ -108,7 +168,19 @@ Practical-primary-button-text: Kontakt oss
 
 ----
 
+Practical-primary-button-url: 
+
+----
+
 Practical-secondary-button-text: Bli medlem
+
+----
+
+Practical-secondary-button-url: 
+
+----
+
+Meta-description: Se faste tilbud, camps og aktiviteter i Tønsberg Skateboardklubb. Finn datoer, status og praktisk info på ett sted.
 
 ----
 

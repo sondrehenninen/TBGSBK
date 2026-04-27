@@ -2,6 +2,14 @@ Title: Skate and Scoot
 
 ----
 
+Hero-icon: 
+
+----
+
+Hero-image: 
+
+----
+
 Tag: Sommeren 2026
 
 ----
@@ -31,6 +39,14 @@ Description:
 Skate and Scoot samler ulike hjulmiljøer i en felles ramme med fokus på aktivitet, inkludering og god stemning.
 
 Arrangementet passer for flere nivåer og fungerer både som møteplass og aktivitetstilbud i sommerhalvåret.
+
+----
+
+Signup-link: 
+
+----
+
+Price: 
 
 ----
 

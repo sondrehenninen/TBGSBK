@@ -9,9 +9,11 @@ $ctaImage = $site->cta_image()->toFile();
 <section class="subpage-hero">
   <div class="container subpage-hero__inner">
     <div class="subpage-hero__top">
+      <?php if ($heroIcon): ?>
       <div class="subpage-hero__mark">
-        <img src="<?= $heroIcon ? $heroIcon->url() : url('assets/Ilustrasjoner/white/SVG/truck.svg') ?>" alt="">
+        <img src="<?= $heroIcon->url() ?>" alt="">
       </div>
+      <?php endif ?>
       <div class="subpage-hero__identity">
         <div class="subpage-hero__heading">
           <nav class="breadcrumbs" aria-label="Brødsmuler">
@@ -30,9 +32,11 @@ $ctaImage = $site->cta_image()->toFile();
         </div>
       </div>
     </div>
+    <?php if ($heroImage): ?>
     <div class="subpage-hero__media">
-      <img src="<?= $heroImage ? $heroImage->url() : url('assets/Bilder til nettsiden/Nye elementer 2025/ferdig.webp') ?>" alt="<?= $heroImage ? $heroImage->alt()->or('Nye skateelementer bygget med støtte fra samarbeidspartnere')->esc() : 'Nye skateelementer bygget med støtte fra samarbeidspartnere' ?>">
+      <img src="<?= $heroImage->url() ?>" alt="<?= $heroImage->alt()->or('Nye skateelementer bygget med støtte fra samarbeidspartnere')->esc() ?>">
     </div>
+    <?php endif ?>
   </div>
 </section>
 
